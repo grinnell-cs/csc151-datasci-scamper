@@ -1,0 +1,60 @@
+csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151 csc151
+functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional functional 
+programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming programming 
+recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion recursion
+hash hash hash has hash has
+car car car car car car car car
+cdr cdr cdr cdr cdr cdr
+cadr cadr cadr cadr
+cddr cdr
+cons cons cons cons cons cons cons
+list-ref
+vector-ref
+integer integer integer integer integer
+real real real
+complex
+exact
+inexact
+predicate predicate
+cond cond cond cond
+lambda lambda lambda lambda lambda lambda
+conditional
+documentation
+testing testing testing testing testing testing testing testing testing testing
+style
+list list list list list list list list list list list list
+pair pair pair pair
+ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics ethics 
+vector vector vector
+structures
+random
+dictionary
+tree
+max max max
+min
+foo foo foo
+efficiency
+local
+name
+symbol
+string
+shape
+solid-rectangle solid-rectangle
+la la la la la la la la la la la la la
+color color color
+blue blue blue blue blue
+rgb rgb rgb rgb
+red red red
+map map map map map map map map map map 
+filter filter filter filter filter filter filter filter filter filter 
+reduce reduce reduce reduce reduce reduce reduce reduce reduce reduce 
+tally tally tally tally tally tally tally tally tally tally 
+problem problem problem problem
+solving solving solving solving
+image image image image
+bitmap bitmap
+pixel pixel pixel pixel pixel
+style style style style style
+abstraction abstraction abstraction abstraction abstraction abstraction abstraction abstraction abstraction abstraction abstraction abstraction 
+binding binging
+trace trace trace trace
