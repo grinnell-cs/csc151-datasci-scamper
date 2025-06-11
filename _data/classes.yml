@@ -1,0 +1,470 @@
+- topic: An introduction to algorithms
+  abbrev: intro
+  slides_link: https://docs.google.com/presentation/d/1vgHy9Y12PzUug5FMtLUQKgInhV8UykYBsT1-EzPUNdc/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We begin the class by exploring the definition of computer
+    science and by trying to write some basic algorithms.
+
+- topic: Getting started with Scheme
+  abbrev: racket-tech
+  slides_link: https://docs.google.com/presentation/d/16pNsjHrUEDAFd1Aphf_YZ7u1_eu9mdfcK-eeNeEWAo0/edit#slide=id.g2666291cd13_0_239
+  summary: |
+    We consider Scheme, the programming language we will use
+    throughout the course.
+  reading:
+    - page: /readings/mathlan.html
+    - page: /readings/algorithm-building-blocks.html
+    - page: /readings/scamper.html
+  lab:
+    - page: /labs/mathlan.html
+    - page: /labs/scamper-intro.html
+
+- topic: Algorithmic decomposition
+  abbrev: decomposition
+  slides_link: https://docs.google.com/presentation/d/1uREDJaU-TdvPnr-ldXLELQSNw2XAcDVfjU2vqjv1G9A/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We consider a key technique in algorithmic thinking, how one “decomposes” a
+    more complex problem or algorithm into simpler ones.
+  reading:
+    - page: /readings/images.html
+    - page: /readings/decomposition.html
+  lab:
+    - page: /labs/decomposition.html
+  todo:
+    - Check the images reading to make sure it works with the new model.
+
+- topic: Reading and writing procedures
+  abbrev: procedures
+  summary: |
+    We consider ways to write your own procedures and why you might do so.
+    We also explore how one interprets the algorithms others write.
+    And we develop some mental models for what happens when we run
+    Scheme/Racket programs.
+  reading:
+    - page: /readings/procedures.html
+  lab:
+    - page: /labs/procedures.html
+
+- topic: Computation via expressions
+  abbrev: expressions
+  slides_link: https://docs.google.com/presentation/d/1MH0d29iokwQ5RIGNT2oqT5pGiIkXYs00JWCdZZg7-s8/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We look at the fundamental building block of computation in functional
+    programming languages, the expression, and build an appropriate model of
+    how expressions "compute". 
+
+    NOTE: We forgot to post the second reading, "Mental models of computation," on time. You do not need to include it in your reading response, but we recommend that you read through it carefully on your own as mental models is an essential topic for the course.
+  reading:
+    - page: /readings/computation-via-expressions.html
+    - page: /readings/mental-models.html
+  lab:
+    - page: /labs/mental-models-of-computation.html
+
+
+- topic: Expressions and types
+  abbrev: exprs-and-types
+  slides_link: https://docs.google.com/presentation/d/1rm4fCfh6RlVIq38ky5MUgvXu-_DUriAhZUudAgV5nVk/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We explore many of the basic types of values in Scheme, the
+    capabilities Scheme provides for working with those types, and
+    how one builds more complex expressions.  We also continue 
+    building our mental model.
+  reading:
+    - page: /readings/exprs-and-types.html
+    - page: /readings/numbers.html
+    - page: /readings/strings.html
+    # - page: /readings/symbols.html
+  lab:
+    - page: /labs/basic-types.html
+
+  todo:
+    - Consider adding symbols to the lab.
+    - Consider which types reading to use (or combine them).
+    - Might do some cleanup; we split numbers and strings in 2024Sp
+
+- topic: Booleans, predicates, and conditionals
+  abbrev: booleans
+  slides_link: https://docs.google.com/presentation/d/1Q7lZqOF0Cy-PUduYR51wgE4WofYSAg7WFcYjnH9W6Oo/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We consider how one writes procedures that make decisions.
+  reading:
+    - page: /readings/booleans.html
+    - page: /readings/conditionals.html
+  lab:
+    - page: /labs/conditionals.html
+  todo:
+    - Last semester, we needed two days for this. I'm inserting a pause for breath
+
+
+- topic: Software engineering fundamentals
+  abbrev: software-engineering
+  slides_link: https://docs.google.com/presentation/d/1NdEXhLiaS03Pm_OwXIbHgg7I8hjmQ-p38UgJOVEB0Qk/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We consider the trifecta of software engineering: documentation, testing, and debugging.  That is, we explore why and how you document your code, why and how you test your code, and how you might find errors in your code.
+  reading:
+    - page: /readings/documenting-your-code.html
+    - page: /readings/unit-testing.html
+    - page: /readings/hypothesis-driven-debugging.html
+  lab:
+    - page: /labs/documentation-and-testing.html
+
+- topic: RGB colors
+  abbrev: rgb-colors
+  slides_link: https://docs.google.com/presentation/d/1hmDJH5S_0PwXn9TKz2v5bFkHGA3t1X9kmDH9Kp5wc4U/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We explore one of the basic color models used by computers.
+  reading:
+    - page: /readings/design-and-color.html
+    - page: /readings/rgb-colors.html
+  lab:
+    - page: /labs/rgb-colors.html
+  todo:
+    - Make sure this works with the new model.
+    - Combine the labs
+
+- topic: Transforming images
+  abbrev: transforming-images
+  slides_link: https://docs.google.com/presentation/d/14z5lw6-BlXNzWF_5TAFsvDib7i8W61cGYqcgq-VtRyY/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We expand our understanding of RGB transformations to image transformations.
+  reading:
+    - page: /readings/anonymous-procedures.html
+    - page: /readings/transforming-rgb.html
+    - page: /readings/transforming-images.html
+  lab:
+    - page: /labs/transforming-images.html
+  todo:
+    - Incorporate anonymous procedures. (At least that's the plan.)
+
+- topic: Local bindings
+  abbrev: let
+  slides_link: https://docs.google.com/presentation/d/1oaiPhaRLYkWpaGFWhZ9E2x5kNHuXVZLw5YfKF_22sVU/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We explore issues of redundacy in code and mechanisms for reducing such reducnancy.
+  reading:
+    - page: /readings/local-bindings.html
+  lab:
+    - page: /labs/local-bindings.html
+
+- topic: Pair programming
+  abbrev: pair-programming
+  slides_link: https://docs.google.com/presentation/d/1g2vaMSROaolcP6LVQbdtRx7B0A_Z4oK6xkwASwYNTwA/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We explore the whys and hows of working with others.
+  reading:
+    - title: Diverse Teams Feel Less Comfortable -- and That's Why They Perform Better
+      resource: /files/DiverseTeams2016.pdf
+    - title: How Pair Programming Really Works (Wray)
+      resource: /files/PairProgramming.pdf
+  lab:
+    - (TBA)
+
+- topic: "Exam #1"
+  abbrev: exam-1
+  summary: |
+    The first core examination.
+
+- topic: Lists
+  abbrev: lists
+  slides_link: https://docs.google.com/presentation/d/1uJFmfIwFAy1tg3MjWo7tTkkCaVyXRsjW3HhizsXLGYg/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We return to Scheme's *list* data structure and some ways to
+    use lists to work with collections of data.
+  reading:
+    - page: /readings/list-basics.html
+    - page: /readings/list-transform-generic.html
+  lab:
+    - page: /labs/list-basics.html
+  todo:
+    - Do we also include `car`, `cdr`, and `cons` here?  Do we
+     perhaps include a separate day?
+
+- topic: Processing lists
+  abbrev: processing-lists
+  slides_link: https://docs.google.com/presentation/d/19vkdeM3sogD51aW4UVQO7LKENB5EXl5KMO_VOvEH_L0/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We explore ways to use lists to work with collections of drawings 
+    using "the big three" list procedures: `map`, `reduce`, and `filter`.
+  reading:
+    - page: /readings/list-big-three.html
+  lab:
+    - page: /labs/lists-more.html
+  todo:
+    - Incorporate sort and tally.
+    - Consider incorporating the old /labs/drawing-lists.html
+
+- topic: Style and List Processing Practice
+  abbrev: higher-order-functions
+  slides_link: https://docs.google.com/presentation/d/1N-AHVkoSJRiXh3XN8MV1b1obc_-T3Otn-R3LeRaUH_E/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We continue practicing list process with the "big three."
+    Additionally, we also take the time to consider good style in programming.
+  reading:
+    - page: /readings/code-style.html
+  lab:
+    - page: /labs/wrangling-data.html
+
+- topic: Thinking recursively
+  abbrev: recursion-intro
+  slides_link: https://docs.google.com/presentation/d/1svNcebkd2SgtRBmoO41zCElM-cnDFcHBWSrMBM_jJKI/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We begin our exploration of *recursion*, the most general form
+    of repetition available in Scheme.  You can use recursion to
+    both build and iterate over different kinds of values.
+  reading:
+    - page: /readings/thinking-recursively.html
+  lab:
+    - page: /labs/pattern-matching-and-recursive-tracing.html
+
+- topic: Introduction to list recursion
+  abbrev: recursion-intro
+  slides_link: https://docs.google.com/presentation/d/1zp_UWVsX3hLXWBAuOB795SqUfRHDTqD5EWDygv2ETwE/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We begin our exploration of *recursion*, the most general form
+    of repetition available in Scheme.  You can use recursion to
+    both build and iterate over different kinds of values.
+  reading:
+    - page: /readings/pattern-matching.html
+    - page: /readings/recursion-over-lists.html
+  lab:
+    - page: /labs/recursion-practice.html
+
+- topic: List motions
+  summary: |
+    We continue to explore list recursion by examining how we use recursion to
+    perform basic motions over lists.
+  slides_link: https://docs.google.com/presentation/d/1VemaRM4SH2lPjdeAAdN_AArD7nAQPP7qApSLW_KtuAc/edit#slide=id.g307c3f5f546_0_0
+  reading:
+    - page: /readings/list-motions.html
+  lab:
+    - page: /labs/more-list-practice.html
+
+- topic: List Motions (continued)
+  slides_link: https://docs.google.com/presentation/d/1WtdvR6CdiZAo6MhRy2cO1txaM90vCRpLukjlfVaSSkE/edit#slide=id.g307c3f5f546_0_0
+  summary: | 
+    See above
+  reading:
+    - page: /readings/recursion-over-numbers.html
+  lab:
+    - (continue Friday's lab)
+
+- topic: Recursion over numbers
+  abbrev: number-recursion
+  slides_link: https://docs.google.com/presentation/d/1ue7b3pGi7Ohu_aOmrF1C4WV_P4Eg3aNW4wKom7p3C40/edit#slide=id.g307c3f5f546_0_0
+  summary: |    
+    We consider a slightly different kind of recursion, numeric
+    recursion.  In this technique, we once again have procedures
+    call themselves.  However, the parameter that we "simplify" at
+    every step is a number, rather than a list.
+  reading:
+    - (No required reading for today!)
+  lab:
+    - page: /labs/numeric-recursion.html
+
+- topic: Higher-order Recursive Programming
+  abbrev: higher-order-recursive-programming
+  slides_link: https://docs.google.com/presentation/d/1kSry_wDS9t6O_ZiTUFqz1YIVutsFObV-3xkoTt2m1I4/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We combine higher-order functions and recursive programming to implement the "big three" operations over lists. (Extra topic: Tail recursion -- We look at an advanced version of recursion that is ubiquitous in functional programming, tail recursion.)
+  reading:
+    - page: /readings/tail-recursion.html
+  lab:
+    - page: /labs/implementing-the-big-three.html
+    - page: /labs/tail-recursion.html
+
+- topic: Higher-order Recursive Programming
+  abbrev: higher-order-recursive-programming
+  slides_link: https://docs.google.com/presentation/d/1CnClvS_jIC2_9Y27y-NhWg_f3QsaC9xZySfMLtAAhv8/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We combine higher-order functions and recursive programming to implement the "big three" operations over lists. (Extra topic: Tail recursion -- We look at an advanced version of recursion that is ubiquitous in functional programming, tail recursion.)
+  reading:
+    - page: /readings/association-lists.html
+  lab:
+    - page: /labs/implementing-the-big-three.html
+    - page: /labs/tail-recursion.html
+
+- topic: Dictionaries
+  abbrev: dictionaries
+  slides_link: https://docs.google.com/presentation/d/1mWkGI6rNkAiRaSeWrWjpTSDERD_JyGn7MEuNOM2rB_U/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We consider how we might use list recursion to build structures that allow
+    us to store information for quick retrieval.
+  reading:
+    - (Review association lists reading)
+  lab:
+    - page: /labs/letter-inventory.html
+
+- topic: "Exam 2"
+  abbrev: exam-2
+  summary: |
+    The second core examination.
+
+- topic: Vectors
+  abbrev: vectors
+  slides_link: https://docs.google.com/presentation/d/1dk0tiIiiwqEPjgIwWXSFM_w1wafnoL3VT6hSeb1OIXI/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We explore vectors, an alternative to lists for storing data.
+  reading:
+    - page: /readings/vectors.html
+  lab:
+    - page: /labs/vectors.html
+
+- topic: Sequencing and effects
+  abbrev: sequencing-and-effects
+  slides_link: https://docs.google.com/presentation/d/1RUfi7TImM7JW2ElhsUGI9Qva_eq4BLrnE6-GSlj5-b0/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We discuss (finally!) what a side-effect is, why they are useful, and how functional programming (correctly) encourages us to moderate their use.
+  reading:
+    - page: /readings/sequencing-and-effects.html
+  lab:
+    - page: /labs/sequencing-and-effects.html
+
+- topic: Randomness
+  abbrev: randomness
+  slides_link: https://docs.google.com/presentation/d/1peR8Mtk-t6u6nOwcST_qWIXmDG3y0IimFu3F-NTCzPs/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We consider Scheme's `random` procedure and how one might use
+    that procedure in generating language.
+  reading:
+    - page: /readings/randomness.html
+  lab:
+    - page: /labs/random-language.html
+
+- topic: Per-pixel manipulation
+  abbrev: per-pixel-manipulation
+  slides_link: https://docs.google.com/presentation/d/1KoIOD5vf8TQe_zh0a4fpfz_597XENc1ipVJcuc-sTU0/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We dive deeper into how images are represented underneath the hood in anticipation for our final projects.
+  reading:
+    - page: /readings/iteration.html
+  lab:
+    - page: /labs/pixel-manipulation.html
+
+- topic: Animation
+  abbrev: animation
+  slides_link: https://docs.google.com/presentation/d/1ds295uawk-0V9-qcztdcjitAAOORoIkKPN1K2F6KIEI/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We examine Scamper's facilities for interactive, media-based programming.
+  reading:
+    - page: /readings/animation.html
+  lab:
+    - page: /labs/animation.html
+
+- topic: Project kick-off
+  abbrev: project-kick-off
+  slides_link: https://docs.google.com/presentation/d/1_QUQ3SDXgOfiDZQkxU9GXVCUcG8ieZ0wOZvL-B6QTcA/edit#slide=id.g2666291cd13_0_234
+  summary: |
+    We kick-off the final project, finalizing topics, forming groups, and building a plan of action!
+  reading:
+    - page: /readings/the-final-project.html
+  lab: 
+    - none
+
+- topic: Structures
+  abbrev: structs
+  slides_link: https://docs.google.com/presentation/d/1bF-7PymXV6AmuLNNu6FcS1U9GMmkTHgWwmTDl7Vf3mI/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We consider the `struct`, a way to define new types in Scheme.
+  reading:
+    - page: /readings/data-abstraction.html
+    - page: /readings/preconditions.html
+  lab:
+    - page: /labs/structs.html
+
+- topic: Trees
+  abbrev: trees
+  slides_link: https://docs.google.com/presentation/d/1s42KridrxOq8RUQBxcdqi3hMozCFmlAX4Xt4w0ATy6o/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We consider a common hierarchial mechanism for structuring data
+    and how to realize it in Scheme.
+  reading:
+    - page: /readings/trees-ex.html
+  lab:
+    - page: /labs/binary-trees.html
+
+- topic: Project work day!
+  abbrev: project-work-day
+  slides_link: https://docs.google.com/presentation/d/1Prr5MxVDP1TZ6QOtRt-LqdG9zSPEaJF47j5mxbethsc/edit#slide=id.g2666291cd13_0_234
+  reading:
+    - none
+  lab:
+    - none
+
+- topic: Tree recursion
+  abbrev: tree-recursion
+  slides_link: https://docs.google.com/presentation/d/1qvKCLERvLrpB5UAPN2rCkrHJMiwEVtXKD7aG5G_0hrE/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We consider how to write recursive programs that process trees
+    and other tree-like structures.
+  reading:
+    - page: /readings/tree-recursion.html
+    - page: /readings/binary-search-trees.html
+  lab:
+    - page: /labs/tree-recursion.html
+
+- topic: Project work day!
+  abbrev: project-work-day
+  slides_link: https://docs.google.com/presentation/d/1BT8Vs4X7kaGFj-btu4lm7t-ZMBhkqkEfk_P-2dZ01lw/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    Before Thanksgiving break, we pause to give everyone time to make substantial progress on their final projects.
+
+- topic: Counting operations
+  abbrev: counting-operations
+  slides_link: https://docs.google.com/presentation/d/1mW6KU0H6nlu58X7PfQsyAvk48kaF34DV0qFw431xgK8/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We explore techniques for analyzing the number of calls made
+    in evaluating procedures, particularly recursive procedures.
+    We consider why such analysis is useful.  We then delve into
+    a common problem: That of finding values in a collection.
+  reading:
+    - page: /readings/interactivity-events-and-reactivity.html
+    - page: /readings/analyzing-procedures.html
+  lab:
+    - page: /labs/computational-complexity.html
+
+- topic: Pause for breath
+  abbrev: pause-for-breath-3
+  slides_link: https://docs.google.com/presentation/d/1v7Ddh0rge_XPfr5zNFdf9654r26DwMTVXohKQ-5sT4U/edit#slide=id.g307c3f5f546_0_0
+  summary: |
+    We review the material in this final leg of the course before the third exam.
+
+- topic: "Exam 3"
+  abbrev: exam-3
+  summary: |
+    The third core examination.
+
+- topic: "Case study: searching and sorting"
+  abbrev: searching-and-sorting
+  summary: |
+    As a case study of looking at computational complexity, we examine different ways of performing two ubiquitous operations in programming, searching and sorting.
+  reading:
+    - page: /readings/searching.html
+    - page: /readings/sorting.html
+
+- topic: "Project presentations"
+  abbrev: project-presentations
+  reading: 
+    - None
+  lab:
+    - None
+
+- topic: "Presentation wrap-up and conclusion"
+  abbrev: conclusion
+  reading: 
+    - None
+  lab:
+    - None
+
+- topic: Exam 4 
+  summary: 2-5 pm in our regular classroom
+  reading: 
+    - None
+  lab:
+    - None
+
+- topic: Final due date
+  summary: The college will not allow you to turn in any work after 5pm on this day
+  reading: 
+    - None
+  lab:
+    - None

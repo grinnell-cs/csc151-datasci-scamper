@@ -1,0 +1,219 @@
+
+- date: 2024-09-02
+  due:
+    - page: /mps/intro-survey.html
+
+- date: 2024-09-04
+  assigned:
+    - page: /mps/mp01.html
+
+- date: 2024-09-06
+  due:
+    - Assessment 1 Pre-reflection
+
+
+
+- date: 2024-09-09
+  due:
+    - page: /mps/mp01.html
+
+- date: 2024-09-11
+  due:
+    - Assessment 1 Post-reflection
+
+- date: 2024-09-12
+  assigned:
+    - page: /mps/mp02.html
+
+- date: 2024-09-13
+  due:
+    - Assessment 2 Pre-reflection
+    - Quiz 1
+
+
+
+- date: 2024-09-16
+  due:
+    - page: /mps/mp02.html
+
+  assigned:
+    - page: /mps/mp03.html
+
+- date: 2024-09-18
+  due:
+    - Assessment 2 Post-reflection
+    - Assessment 3 Pre-reflection
+
+- date: 2024-09-20
+  due: 
+    - Quiz 2
+
+
+
+- date: 2024-09-23
+  due: 
+    - page: /mps/mp03.html
+
+- date: 2024-09-25
+  due:
+    - Assessment 3 Post-reflection
+    - Exam 1 Pre-reflection
+
+- date: 2024-09-27
+  due:
+    - Exam 1
+
+
+
+- date: 2024-09-30
+  due:
+    - Exam 1 Post-reflection
+  assigned:
+    - page: /mps/mp04.html
+
+- date: 2024-10-02
+  due:
+    - Assessment 4 Pre-reflection
+
+- date: 2024-10-04
+  due:
+    - Quiz 3
+
+
+
+- date: 2024-10-07
+  due:
+    - page: /mps/mp04.html
+  assigned:
+    - page: /mps/mp05.html
+
+- date: 2024-10-09
+  due:
+    - Assessment 4 Post-reflection
+    - Assessment 5 Pre-reflection
+
+- date: 2024-10-11
+  due:
+    - Quiz 4
+
+
+
+- date: 2024-10-14
+  due:
+    - page: /mps/mp05.html
+  assigned:
+    - page: /mps/mp06.html
+
+- date: 2024-10-16
+  due:
+    - Assessment 5 Post-reflection
+    - Assessment 6 Pre-reflection
+
+- date: 2024-10-18
+  due:
+    - Quiz 5
+
+
+
+- date: 2024-10-28
+  due:
+    - page: /mps/mp06.html
+
+- date: 2024-10-30
+  due:
+    - Assessment 6 Post-reflection
+    - Exam 2 Pre-reflection
+
+- date: 2024-11-01
+  due:
+    - Exam 2
+
+
+
+- date: 2024-11-04
+  due:
+    - Exam 2 Post-reflection
+  assigned:
+    - page: /mps/mp07.html
+
+- date: 2024-11-06
+  due:
+    - Assessment 7 Pre-reflection
+
+- date: 2024-11-08
+  due:
+    - Quiz 6
+
+
+
+- date: 2024-11-11
+  assigned:
+    - page: /readings/the-final-project.html
+  due:
+    - page: /mps/mp07.html
+
+- date: 2024-11-13
+  due:
+    - Assessment 7 Post-reflection
+
+- date: 2024-11-15
+  due:
+    - Quiz 7
+
+
+
+- date: 2024-11-18
+  assigned:
+    - page: /mps/mp08.html
+
+- date: 2024-11-20
+  due:
+    - Assessment 8 Pre-reflection
+
+- date: 2024-11-22
+  due:
+    - Quiz 8
+    - Final Project Milestone 2
+
+
+
+- date: 2024-11-27
+  due:
+    - page: /mps/mp08.html
+
+
+- date: 2024-12-02
+  due: 
+    - Final Project Milestone 3
+    - Assessment 8 Post-reflection
+
+- date: 2024-12-04
+  due:
+    - Exam 3 Pre-reflection
+    
+- date: 2024-12-06
+  due:
+    - Exam 3
+
+
+
+- date: 2024-12-10
+  due:
+    - Final Project Milestone 4
+
+- date: 2024-12-11
+  due:
+    - Exam 3 Post-reflection
+
+- date: 2024-12-13
+  due:
+    - Final Project Milestone 5
+
+
+- date: 2024-12-18
+  due:
+    - Exam 4 
+
+- date: 2024-12-20
+  due:
+    - Last revision period closes. No work may be accepted after 5pm (as required by the college).

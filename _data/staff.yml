@@ -1,0 +1,46 @@
+# see also images/staff/ and pages/staff.md
+
+- instructors:
+  title: "Instructor"
+  contents:
+      - name: Leah Perlmutter
+        pronouns: she/her
+        photo: /images/staff/leah.jpg
+        bio: This is my second year teaching at Grinnell and my second time teaching CSC 151. I grew up in Ohio, and studied computer ccience at Colby College in Maine. The first time I ever took a CS class was my second semester of college. After graduation, I moved to Seattle, Washington where I worked at software companies Amazon and EnergySavvy for three years, then earned my PhD from the University of Washington. My PhD dissertation is about student sense of belonging in college computer science. When I'm not teaching, I enjoy indoor climbing, gravel biking, and spending time with my husband John and cat Mocha.
+
+- mentors:
+  title: "Mentors"
+  description: We have 3 wonderful mentors working with CSC 151 this semester. One mentor helps out in class during each section. All mentors will hold mentor sessions for students from all sections.
+  contents: 
+    - name: Tiffany
+      pronouns: she/her
+      section: "03"
+      photo: /images/staff/tiffanyY.png
+      bio: Hi everyone! My name is Tiffany and I am a 2nd year computer science major. I am super excited to be mentoring CSC151 this semester so please feel free to contact me with any questions you may have! 
+    - name: Owen Block
+      pronouns: He/Him
+      section: "02"
+      photo: /images/staff/owen.jpg
+      bio: I am a second year from Buffalo, New York, and am one of the class mentors for CS-151 this semester. I am a prospective Computer Science and Philosophy double major and also a member of the Cross Country and Track and Field Teams here at Grinnell. When I am not studying or running I attend Contra Dance and Swing Dance club as well as Chess and Board Game club. I look forward to working and learning alongside you.
+    - name: Jake Bell
+      pronouns: He/Him
+      section: "01"
+      photo: /images/staff/jake.jpg
+      bio: Hello! My name is Jake, I am a second-year student, and I intend on majoring in Computer Science. I come from a really small town in Texas, and I somehow ended up in a small town in Iowa. At Grinnell, I love throwing things for our Track and Field team and hanging out with friends. When I took 151 last year, it was my first time ever coding in my life! If I can do it, you can surely do it to! I love to help so don't be afraid to reach out to me! I look forward to our semester together!
+  
+- tutors:
+  title: "Tutors"
+  description: We have 9 amazing evening tutors in the department this semester. During their evening lab hours, they are eager to help you with your learning and your homework. They also help students taking CSC 161 and CSC 207. Some of your tutors opted to introduce themselves here.
+  contents: 
+      - name: Tang Yixuan (Tiffany)
+        pronouns: she/her/hers
+        photo: /images/staff/tiffanyT.jpg
+        bio: Hey Folks! I am Yixuan from China, a second-year student. I am very honored to be your evening tutor this semester. My intended major is double Math and CS. I hope that I can offer you guys inspirations that encourage you all to create your own lightbulb moments! Hope you all have fun in CS.
+      - name: Ishita Sarraf
+        pronouns: She/her
+        photo: /images/staff/ishita.jpg
+        bio: Hi everyone!! My name is Ishita. I am a fourth year Computer Science major with a concentration in Statistics from Kolkata, India. I am excited to meet you all for evening tutor sessions, you can find me on Mondays and Tuesdays (7-8:30 pm) in Noyce 3813. Feel free to drop by to say hi, ask questions regarding assignments, or Grinnell in general. I am the treasurer for the Women and Gender Minorities in Computing student organisation and we will be hosting fun events! Get in touch if you want to join the organisation. I have also done off-campus study in London and can answer questions related to those as well! Looking forward to meeting you all!
+      - name: Avaash Bhattarai
+        pronouns: he/him
+        photo: /images/staff/avaash.jpg
+        bio: Hey everyone! I am Avaash, a third year CS and Math major, and I am so excited to tutor for your CS class this semester. I fell in love with functional programming when I took 151, and I hope to help you see the beauty in it too! I will be in 3813 Tuesdays and Thursdays 7-8:30pm to help with anything as you work through the material. Please don’t hesitate to stop by!!
