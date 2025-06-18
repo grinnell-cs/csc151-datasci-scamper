@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # tasks/deploy
 #   Deploy the site to the appropriate location.
 #
@@ -8,9 +9,8 @@
 # Settings.  These should probably exist somewhere else.
 #SEMESTER=2024Sp
 #COURSE=CSC151
-#SITE=public_html/Courses/$COURSE/$SEMESTER/
-SITE=public_html/teaching/2024F/CSC_151_03/
-REMOTE=reclaim
+SITE=public_html/csc-151-fall-2025/
+REMOTE=eikmeier@sites.grinnell.edu
 
 # Feedback
 echo $SITE
@@ -19,3 +19,5 @@ echo $SITE
 bundle exec jekyll build
 
 rsync -rtz _site/ $REMOTE:$SITE
+
+
