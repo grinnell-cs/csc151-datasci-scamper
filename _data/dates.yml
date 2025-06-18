@@ -2,207 +2,207 @@
   num: 0
   anchor: week00
   days:
-    - { date: 2024-08-25 }
-    - { date: 2024-08-26 }
-    - { date: 2024-08-27 }
-    - { date: 2024-08-28 }
-    - { date: 2024-08-29 }
-    - { date: 2024-08-30, class: true }
-    - { date: 2024-08-31 }
+    - { date: 2025-08-24 }
+    - { date: 2025-08-25 }
+    - { date: 2025-08-26 }
+    - { date: 2025-08-27 }
+    - { date: 2025-08-28 }
+    - { date: 2025-08-29, class: true }
+    - { date: 2025-08-30 }
 
 - week: "Week 1"
   num: 1
   anchor: week01
   days:
-    - { date: 2024-09-01 }
-    - { date: 2024-09-02, class: true }
-    - { date: 2024-09-03 }
-    - { date: 2024-09-04, class: true }
-    - { date: 2024-09-05 }
-    - { date: 2024-09-06, class: true }
-    - { date: 2024-09-07 }
+    - { date: 2025-08-31 }
+    - { date: 2025-09-01 }
+    - { date: 2025-09-02 }
+    - { date: 2025-09-03, class: true }
+    - { date: 2025-09-04 }
+    - { date: 2025-09-05, class: true }
+    - { date: 2025-09-06 }
 
 - week: "Week 2"
   num: 2
   anchor: week02
   days:
-    - { date: 2024-09-08 }
-    - { date: 2024-09-09, class: true }
-    - { date: 2024-09-10 }
-    - { date: 2024-09-11, class: true }
-    - { date: 2024-09-12 }
-    - { date: 2024-09-13, class: true }
-    - { date: 2024-09-14 }
+    - { date: 2025-09-07 }
+    - { date: 2025-09-08, class: true }
+    - { date: 2025-09-09 }
+    - { date: 2025-09-10, class: true }
+    - { date: 2025-09-11 }
+    - { date: 2025-09-12, class: true }
+    - { date: 2025-09-13 }
 
 - week: "Week 3"
   num: 3
   anchor: week03
   days:
-    - { date: 2024-09-15 }
-    - { date: 2024-09-16, class: true }
-    - { date: 2024-09-17 }
-    - { date: 2024-09-18, class: true }
-    - { date: 2024-09-19 }
-    - { date: 2024-09-20, class: true }
-    - { date: 2024-09-21 }
+    - { date: 2025-09-14 }
+    - { date: 2025-09-15, class: true }
+    - { date: 2025-09-16 }
+    - { date: 2025-09-17, class: true }
+    - { date: 2025-09-18 }
+    - { date: 2025-09-19, class: true }
+    - { date: 2025-09-20 }
 
 - week: "Week 4"
   num: 4
   anchor: week04
   days:
-    - { date: 2024-09-22 }
-    - { date: 2024-09-23, class: true }
-    - { date: 2024-09-24 }
-    - { date: 2024-09-25, class: true }
-    - { date: 2024-09-26 }
-    - { date: 2024-09-27, class: true }
-    - { date: 2024-09-28 }
+    - { date: 2025-09-21 }
+    - { date: 2025-09-22, class: true }
+    - { date: 2025-09-23 }
+    - { date: 2025-09-24, class: true }
+    - { date: 2025-09-25 }
+    - { date: 2025-09-26, class: true }
+    - { date: 2025-09-27 }
 
 - week: "Week 5"
   num: 5
   anchor: week05
   days:
-    - { date: 2024-09-29 }
-    - { date: 2024-09-30, class: true }
-    - { date: 2024-10-01 }
-    - { date: 2024-10-02, class: true }
-    - { date: 2024-10-03 }
-    - { date: 2024-10-04, class: true }
-    - { date: 2024-10-05 }
+    - { date: 2025-09-28 }
+    - { date: 2025-09-29, class: true }
+    - { date: 2025-09-30 }
+    - { date: 2025-10-01, class: true }
+    - { date: 2025-10-02 }
+    - { date: 2025-10-03, class: true }
+    - { date: 2025-10-04 }
 
 - week: "Week 6"
   num: 6
   anchor: week06
   days:
-    - { date: 2024-10-06 }
-    - { date: 2024-10-07, class: true }
-    - { date: 2024-10-08 }
-    - { date: 2024-10-09, class: true }
-    - { date: 2024-10-10 }
-    - { date: 2024-10-11, class: true }
-    - { date: 2024-10-12 }
+    - { date: 2025-10-05 }
+    - { date: 2025-10-06, class: true }
+    - { date: 2025-10-07 }
+    - { date: 2025-10-08, class: true }
+    - { date: 2025-10-09 }
+    - { date: 2025-10-10, class: true }
+    - { date: 2025-10-11 }
 
 - week: "Week 7"
   num: 7
   anchor: week07
   days:
-    - { date: 2024-10-13 }
-    - { date: 2024-10-14, class: true }
-    - { date: 2024-10-15 }
-    - { date: 2024-10-16, class: true }
-    - { date: 2024-10-17 }
-    - { date: 2024-10-18, class: true }
-    - { date: 2024-10-19 }
+    - { date: 2025-10-12 }
+    - { date: 2025-10-13, class: true }
+    - { date: 2025-10-14 }
+    - { date: 2025-10-15, class: true }
+    - { date: 2025-10-16 }
+    - { date: 2025-10-17, class: true }
+    - { date: 2025-10-18 }
 
 - week: "Fall Break"
   break: true
   days:
-    - { date: 2024-10-20 }
-    - { date: 2024-10-21 }
-    - { date: 2024-10-22 }
-    - { date: 2024-10-23 }
-    - { date: 2024-10-24 }
-    - { date: 2024-10-25 }
-    - { date: 2024-10-26 }
+    - { date: 2025-10-19 }
+    - { date: 2025-10-20 }
+    - { date: 2025-10-21 }
+    - { date: 2025-10-22 }
+    - { date: 2025-10-23 }
+    - { date: 2025-10-24 }
+    - { date: 2025-10-25 }
 
 - week: "Week 8"
   num: 8
   anchor: week08
   days:
-    - { date: 2024-10-27 }
-    - { date: 2024-10-28, class: true }
-    - { date: 2024-10-29 }
-    - { date: 2024-10-30, class: true }
-    - { date: 2024-10-31 }
-    - { date: 2024-11-01, class: true }
-    - { date: 2024-11-02 }
+    - { date: 2025-10-26 }
+    - { date: 2025-10-27, class: true }
+    - { date: 2025-10-28 }
+    - { date: 2025-10-29, class: true }
+    - { date: 2025-10-30 }
+    - { date: 2025-10-31, class: true }
+    - { date: 2025-11-01 }
 
 - week: "Week 9"
   num: 9
   anchor: week09
   days: 
-    - { date: 2024-11-03 }
-    - { date: 2024-11-04, class: true }
-    - { date: 2024-11-05 }
-    - { date: 2024-11-06, class: true }
-    - { date: 2024-11-07 }
-    - { date: 2024-11-08, class: true }
-    - { date: 2024-11-09 }
+    - { date: 2025-11-02 }
+    - { date: 2025-11-03, class: true }
+    - { date: 2025-11-04 }
+    - { date: 2025-11-05, class: true }
+    - { date: 2025-11-06 }
+    - { date: 2025-11-07, class: true }
+    - { date: 2025-11-08 }
 
 - week: "Week 10"
   num: 10
   anchor: week10
   days:
-    - { date: 2024-11-10 }
-    - { date: 2024-11-11, class: true }
-    - { date: 2024-11-12 }
-    - { date: 2024-11-13, class: true }
-    - { date: 2024-11-14 }
-    - { date: 2024-11-15, class: true }
-    - { date: 2024-11-16 }
+    - { date: 2025-11-09 }
+    - { date: 2025-11-10, class: true }
+    - { date: 2025-11-11 }
+    - { date: 2025-11-12, class: true }
+    - { date: 2025-11-13 }
+    - { date: 2025-11-14, class: true }
+    - { date: 2025-11-15 }
 
 - week: "Week 11"
   num: 11
   anchor: week11
   days:
-    - { date: 2024-11-17 }
-    - { date: 2024-11-18, class: true }
-    - { date: 2024-11-19 }
-    - { date: 2024-11-20, class: true }
-    - { date: 2024-11-21 }
-    - { date: 2024-11-22, class: true }
-    - { date: 2024-11-23 }
+    - { date: 2025-11-16 }
+    - { date: 2025-11-17, class: true }
+    - { date: 2025-11-18 }
+    - { date: 2025-11-19, class: true }
+    - { date: 2025-11-20 }
+    - { date: 2025-11-21, class: true }
+    - { date: 2025-11-22 }
 
 - week: "Week 12"
   num: 12
   anchor: week12
   days: 
-    - { date: 2024-11-24 }
-    - { date: 2024-11-25, class: true }
-    - { date: 2024-11-26 }
-    - { date: 2024-11-27, class: true }
+    - { date: 2025-11-23 }
+    - { date: 2025-11-24, class: true }
+    - { date: 2025-11-25 }
+    - { date: 2025-11-26, class: true }
 
 - week: "Thanksgiving Break"
   break: true
   days:
-    - { date: 2024-11-28 }
-    - { date: 2024-11-29 }
-    - { date: 2024-11-30 }
+    - { date: 2025-11-27 }
+    - { date: 2025-11-28 }
+    - { date: 2025-11-29 }
 
 - week: "Week 13"
   num: 13
   anchor: week13
   days:
-    - { date: 2024-12-01 }
-    - { date: 2024-12-02, class: true }
-    - { date: 2024-12-03 }
-    - { date: 2024-12-04, class: true }
-    - { date: 2024-12-05 }
-    - { date: 2024-12-06, class: true }
-    - { date: 2024-12-07 }
+    - { date: 2025-11-30 }
+    - { date: 2025-12-01, class: true }
+    - { date: 2025-12-02 }
+    - { date: 2025-12-03, class: true }
+    - { date: 2025-12-04 }
+    - { date: 2025-12-05, class: true }
+    - { date: 2025-12-06 }
 
 - week: "Week 14"
   num: 14
   anchor: week14
   days:
-    - { date: 2024-12-08 }
-    - { date: 2024-12-09, class: true }
-    - { date: 2024-12-10 }
-    - { date: 2024-12-11, class: true }
-    - { date: 2024-12-12 }
-    - { date: 2024-12-13, class: true }
-    - { date: 2024-12-14 }
+    - { date: 2025-12-07 }
+    - { date: 2025-12-08, class: true }
+    - { date: 2025-12-09 }
+    - { date: 2025-12-10, class: true }
+    - { date: 2025-12-11 }
+    - { date: 2025-12-12, class: true }
+    - { date: 2025-12-13 }
 
 - week: "Finals Week"
   anchor: finals
   days:
-    - { date: 2024-12-15 }
-    - { date: 2024-12-16 }
-    - { date: 2024-12-17 }
-    - { date: 2024-12-18, class: true }
-    - { date: 2024-12-19 }
-    - { date: 2024-12-20 }
-    - { date: 2024-12-21 }
+    - { date: 2025-12-14 }
+    - { date: 2025-12-15 }
+    - { date: 2025-12-16 }
+    - { date: 2025-12-17, class: true }
+    - { date: 2025-12-18 }
+    - { date: 2025-12-19 }
+    - { date: 2025-12-20 }
 
 - week: "Winter Break"
   break: true
