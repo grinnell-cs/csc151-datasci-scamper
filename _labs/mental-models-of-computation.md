@@ -10,11 +10,9 @@ We'll then enhance that model with the `define` construct that we have seen thro
 
 ## Logistics
 
-You will do most labs on the computer.  You will submit those labs on Gradescope.  In most cases, we will ask you to upload a file or to copy a procedure you've written.  _It is fine if the code does not work perfectly (or at all).  Just let us know that you're aware of the problems._  Most of the time, you will only turn in a few of the exercises.
+You will do most labs on the computer.  You will submit those labs on Gradescope.  In most cases, we will ask you to upload a file or to copy a procedure you've written.  _It is fine if the code does not work perfectly (or at all).  Just let us know that you're aware of the problems._  
 
 Other labs, such as this one, you will do some/most of your work on paper and submit the paper.
-
-Whether electronic or paper, labs are due before the next class.  You can use a token to submit a lab late, but it must be in before before the subsequent class.
 
 While we would prefer that you finish the lab with your partner, if you decide to finish the lab separately, you may do so.  Please make sure to cite your partner when submitting the lab.
 

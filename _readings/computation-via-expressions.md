@@ -113,18 +113,19 @@ We call `<expr1>` and `<expr2>` _sub-expressions_ of the overall expression.
 
 ## Beyond arithmetic expressions
 
-Of course, our last reading quickly moved from arithmetic to drawings, so we need our rules for Scheme expressions to generalize accordingly.
-Let's look at one of these expressions from our previous reading:
+In this class, we'll be thinking about data science as the application, so we need our rules for Scheme expressions to generalize beyond numbers.
+
+For example, consider the following expression, which we don't know much about yet:
 
 ~~~racket
-(circle 60 "outline" "blue")
+(list "have" "a" "great" "day")
 ~~~
 
-What's different between this expression that produces a circle versus the arithmetic Scheme expression we studied earlier?
+What's different between this expression versus the arithmetic Scheme expression we studied earlier?
 
 +   The "operator" is no longer a symbol.
     Instead, it is a name or _identifier_.
-+   There are more than two operands to this `circle` operation.
++   There are more than two operands to this operation.
 +   The operands are no longer just numbers, they also include these words-in-quotes, _strings_.
 
 We'll learn more about strings next week when we look at the primitive types of Scheme.
@@ -147,10 +148,11 @@ Our template for describing expressions that perform operations now looks like t
 Where the `<expr1> ... <exprk>` represents a _sequence of sub-expressions_ separated by whitespace.
 For example, in the example expression above:
 
-+   `circle` is the identifier.
-+   `60` is the first sub-expression.
-+   `"outline"` is the second sub-expression.
-+   `"blue"` is the third sub-expression.
++   `list` is the identifier.
++   `"Have"` is the first sub-expression.
++   `"a"` is the second sub-expression.
++   `"great"` is the third sub-expression.
++   `"day"` is the fourth sub-expression.
 
 Putting everything together, we can write down the syntax of well-formed Scheme expressions as follows:
 

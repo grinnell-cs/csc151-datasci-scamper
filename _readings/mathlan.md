@@ -148,8 +148,7 @@ can also drag windows between desktops. Many people find it helpful
 to use separate desktops for separate tasks, such as one desktop for
 documentation and information and another desktop for programming. It's
 also useful to keep one desktop clear, so you can use it for looking
-at files. The [corresponding lab](../labs/linux) will give you
-some opportunities to explore desktops.
+at files. 
 
 ## Self checks
 
