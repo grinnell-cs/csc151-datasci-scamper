@@ -6,7 +6,7 @@ summary: |
 preimg: true
 ---
 
-From our discussion of [mental models of computation]({{ "/readings/mental-models.html" | relative_url }}), we know that Scheme programs are composed primarily of *expressions*, program fragments that evaluate to values.
+From our exploration so far. we know that Scheme programs are composed primarily of *expressions*, program fragments that evaluate to values.
 What are the different kinds of values that expressions can evaluate to?
 In other words, what kinds of *data* can our Scheme programs manipulate?
 We've seen some examples already, *e.g.*,
@@ -21,14 +21,6 @@ We've seen some examples already, *e.g.*,
 
     <pre class="scamper source">
     (string-append "hello" "world!")
-    </pre>
-
-+   Images:
-
-    <pre class="scamper source">
-    (import image)
-
-    (beside (circle 50 "solid" "blue") (square 25 "solid" "red"))
     </pre>
 
 But are there others?
@@ -122,6 +114,12 @@ Intuitively, we can think of `+` as specifying the following contract:
 
 From this contract, we say that the *type of the function* is the expected type of its inputs and output.
 For `+` the expected types of the inputs as numbers and the expected type of the output is a number.
+Type mismatches of this sort are a common error in programming, especially whenyou start out.
+Whenever you write code, try to keep in mind:
+
+> What is the *intended* type of the expression that I am trying to write?
+
+This mentality will bring you one step closer towards truly writing code in an intentional, purposeful fashion and not simply throwing random stuff at the wall and seeing if it works!
 
 For function types, the types of the inputs and outputs don't have to be the same, *e.g.*,
 
@@ -131,27 +129,6 @@ For function types, the types of the inputs and outputs don't have to be the sam
     `substring` takes a string and two numbers as input and produces a string as output.
     (*Note*: the indices of a string start at 0, so `l` is indeed the character at index 2!)
 
-As you have likely noticed, keeping the type of a function in mind is *really important* for debugging your code.
-For example, consider the following erroneous call to `circle`:
-
-<pre class="scamper source">
-(import image)
-
-(circle "red" "solid" 500)
-</pre>
-
-If we recall that the type of circle is:
-
-+   `circle` is a function that takes a number (the radius), a string or symbol (the fill), and string or symbol (the color) as input and produces an image as output.
-
-We'll note that the problem with the code is that we've incorrectly interchanged the radius and the color!
-
-Type mismatches of this sort are a common error in programming, especially when you start out.
-Whenever you write code, try to keep in mind:
-
-> What is the *intended* type of the expression that I am trying to write?
-
-This mentality will bring you one step closer towards truly writing code in an intentional, purposeful fashion and not simply throwing random stuff at the wall and seeing if it works!
 
 ## Primitive data in Scheme
 

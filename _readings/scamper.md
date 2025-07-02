@@ -96,40 +96,6 @@ Once we have a list of words, we can find out how long each word is.
      (string-split "Twas brillig and the slithy toves" " "))
 </pre>
 
-## Computing with images
-
-You've already seen a few of Scheme's basic types. Scamper supports
-numbers, strings (text), and lists of values.  Of course, these are
-not the only types it supports.  Some additional types are available
-through separate libraries.  For example, it is comparatively
-straightforward to get Scheme to draw simple shapes if you
-add `(import image)` to the top of your program.
-
-<pre class="scamper source">
-(import image)
-
-(circle 60 "outline" "blue")
-
-(circle 40 "solid" "red")
-</pre>
-
-We can also combine shapes by putting them above or beside each other.
-
-<pre class="scamper source">
-(import image)
-(above (circle 40 "outline" "blue")
-       (circle 60 "outline" "red"))
-(beside (circle 40 "solid" "blue")
-       (circle 40 "outline" "blue"))
-(above (rectangle 60 40 "solid" "red")
-        (beside (rectangle 60 40 "solid" "blue")
-                (rectangle 60 40 "solid" "black")))
-</pre>
-
-As you may have discovered in your youth, there are a wide variety of
-interesting images we can make by just combining simple colored shapes.
-You'll have an opportunity to do so in the corresponding lab.
-
 ## "Scheme" versus "Racket" versus "Scamper"
 
 You may hear about another programming language, _Racket_, from peers who have taken prior versions of CSC 151 or from the various course readings and labs.

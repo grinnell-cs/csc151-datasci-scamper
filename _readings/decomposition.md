@@ -37,70 +37,8 @@ As such, we introduce this concept in this first week of the course to start get
 
 > The problem that I am trying to solve can be decomposed into these smaller problems...
 
-## Visual Decomposition with Pictures
 
-While we haven't seen much of the Scheme programming language yet, we know enough to introduce the basics of algorithmic decomposition with the `image` library introduced in yesterday's reading.
-As a reminder, I encourage you not to read this passively; instead, enter the code interactively as you cover it in your reading.
-This will not only help you get used to typing out Scheme code but also encourage you to play around and experiment with the language.
-
-From last class period's class, recall that we must include a `import` statement in our program so that Scheme knows we're using the `image` library.
-
-~~~racket
-(import image)
-~~~
-
-Our [initial reading on the Scheme language]({{ "/readings/scamper.html" | relative_url }}) introduce us to functions for drawing circles and rectangles:
-
-<pre class="scamper source">
-(import image)
-
-(circle 50 "outline" "blue")
-(rectangle 75 50 "solid" "red")
-</pre>
-
-As well as functions that allow us to place images above and beside each other.
-
-<pre class="scamper source">
-(import image)
-
-(above (circle 35 "outline" "blue")
-       (circle 35 "outline" "red"))
-(beside (rectangle 50 50 "solid" "blue")
-        (rectangle 50 50 "solid" "red"))
-</pre>
-
-Let's consider the problem of drawing the following more complex figure:
-
-<pre class="scamper-output language-racket">
-(import image)
-
-(define top-row
-  (beside (circle 50 "outline" "red")
-          (circle 75 "solid" "blue")))
-
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
-
-(define circles
-  (above top-row bottom-row))
-
-circles
-</pre>
-
-<!--
-![Four circles in a grid.
-  The top-left circle is a small red outline.
-  The top-right circle is large, blue, and filled-in.
-  The bottom-left circle is a large blue outline.
-  The bottom-right circle is small, red, and filled-in]({{ "/images/decomposition-circles-overall.png" | relative_url }})
--->
-
-How might we approach this problem?
-We might start trying to cobble together random combinations of the functions we've seen so far, and we might stumble on a program that works.
-But such an approach---haphazardly trying stuff out until success is achieved---will not scale well when our problems get more complex!
-
-*Algorithmic decomposition* is our primary problem solving strategy for systematically tackling complex problems.
+Algorithmic decomposition is our primary problem solving strategy for systematically tackling complex problems.
 Rather than blundering into a solution, we proceed by:
 
 1.  Breaking up the original, complex problem into smaller, easier *sub-problems to* solve.
@@ -118,147 +56,121 @@ We perform this process naturally in many situations, almost without thinking ab
 However, when put into a novel situation, *e.g.*, computer programming, you might neglect to go through these steps.
 It is therefore instructive to be explicit about your decomposition---luckily, this coincides with *excellent programming practices*, so your diligence is well-rewarded in this context.
 
-Coming back to the proposed picture, let's tackle the problem of drawing the image by breaking it down into smaller pieces.
-One way to do this is to analyze the image *by row*:
-
-+   The top row of shapes is a small, red circle outline followed by a large, blue filled-in circle.
-+   The bottom row of shapes is a large, blue circle outline followed by a small, red filled-in circle.
-+   The top and bottom rows are combined by stacking them on top of each other.
-
-Now, when we go to write the code to produce this figure, we can *translate* this decomposition into code using the `image` library function and the `define` command to explicitly name each of the parts.
-
 We can approach decomposition in either a *bottom-up* or *top-down* style of design.
 In a bottom-up style, we first implement the individual of pieces of the program and then we combine them to form the complete program.
 In a top-down style of design, we first *partially* implement the complete program and then implement the individual pieces.
-We'll illustrate both styles of design below.
+
+We'll illustrate both styles of design below on the problem of computing an average student grade.
 
 ## Bottom-up Design
 
-Let's begin with the top row.
-We'll define `top-row` to be the top row of circles using the `circle` and `beside` functions.
-Note that this `define` command should go into your program below your `import` statement rather than in the explorations window:
+Let's start with computing the sum of student's assignment grades, say they are `50, 39, 45, 42`. 
+
 
 <pre class="scamper source">
-(import image)
-
-(define top-row
-  (beside (circle 50 "outline" "red")
-          (circle 75 "solid" "blue")))
+(define gradesum
+  (+ 50 39 45 42))
 </pre>
 
-We can now go to the explorations window and test our code.
-The practical effect of the `define` command is to make `top-row` an *alias* for the image, so we can simply type in `top-row` as an additional statement in the explorations window to check our work:
+The practical effect of the `define` command is to make `sum` an *alias* for the sum of the values, so we can simply type in `sum` as an additional statement to check our work:
 
 <pre class="scamper source">
-(import image)
+(define gradesum
+  (+ 50 39 45 42))
 
-(define top-row
-  (beside (circle 50 "outline" "red")
-          (circle 75 "solid" "blue")))
-
-top-row
+gradesum
 </pre>
 
-Next, we'll define `bottom-row` to be the bottom row of circles.
+Next, we'll define `num` to be the total number of assignments. In this case it's easy to see that there are 4. However, in the case of longer lists of items (or ones which are changing length!) we would like to use a less error prone method than using our eyeballs.
 
 <pre class="scamper source">
-(import image)
-
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
+(define num
+  (length (list 50 39 45 42)))
+  
 </pre>
 
-And we'll check our work in the explorations window:
+And we can again check our work.
 
 <pre class="scamper source">
-(import image)
+(define	num
+  (length (list 50 39 45 42)))
 
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
-
-bottom-row
+num
 </pre>
 
 Finally, let's put it all together.
-As we discussed, the overall picture is obtained by stacking the `top-row` with the `bottom-row` which we can do with the `above` function.
-We can then check that `circles` is the image that we wanted in explorations window.
-(Make sure that you re-run the explorations window to update it with updates to your program!)
+The overall average is obtained by dividing the sum of grades by the number of graded items. 
 
 <pre class="scamper source">
-(import image)
+(define gradesum
+  (+ 50 39 45 42))
 
-(define top-row
-  (beside (circle 50 "outline" "red")
-          (circle 75 "solid" "blue")))
+(define	num
+  (length (list 50 39 45 42)))
 
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
+(define averagegrade
+  (/ gradesum num))
 
-(define circles
-  (above top-row bottom-row))
-
-circles
+averagegrade
 </pre>
 
 ## Top-Down Design
 
-With top-down design, rather than starting with `top-row` and `bottom-row`, we start with the overall program `circles`.
-We have identified that `circles` is a stack of two rows of images, so we know that the definition of `circles` will involve `above`.
-However, we have not defined `top-row` and `bottom-row` yet---what do we fill in for the arguments to `above`?
+With top-down design, rather than starting with `gradesum` and `num`, we start with the overall program `averagegrade`.
 
-Scamper defines a special value `{??}` which represents an undefined value in the program.
-`{??}` acts as a syntactically valid *placeholder*, reminding us that we should replace `{??}` with an eventual implementation.
-
-Let's do that for `top-row` first.
+We have identified that `averagegrade` is the division of two numbers, so we know that the definition of `averagegrade` will involve `/`.
+However, we have not defined `gradesum` and `num` yet---what do we fill in for the arguments to `above`?
 
 <pre class="scamper source">
-(define top-row
+(define averagegrade
+  (/ {??} {??}))
+</pre>
+
+Scamper defines a special value `{??}` which represents an undefined value in the program.
+`{??}` acts as a syntactically valid *placeholder*, reminding us that we should replace `{??}` with an eventual implementation. Of course, when we run this code, we the `Hole encountered! Fill me in!` error,but we at least know that we have all the keywords and parentheses in the right place.
+
+Let's do that for `gradesum` first.
+
+<pre class="scamper source">
+(define gradesum
   {??})
 </pre>
 
 Note that we can use our hole value as a placeholder to be able to write out the syntax of a define correctly and ensure that we get it right.
-Of course, when we run this code, we the `Hole encountered! Fill me in!` error, but we at least know that we have all the keywords and parentheses in the right place.
-
-Once we define `top-row` as before:
 
 <pre class="scamper source">
-(import image)
+(define gradesum
+  {??})
 
-(define top-row (beside (circle 50 "outline" "red")
-                (circle 75 "solid" "blue")))
+(define averagegrade
+  (/ gradesum {??}))
 </pre>
 
-We can now fill in the corresponding hole in `circles`:
+
+Once we define `gradesum` as before, we can see the program coming together:
 
 <pre class="scamper source">
-(import image)
+(define gradesum
+  (+ 50 39 45 42))
 
-(define top-row (beside (circle 50 "outline" "red")
-                (circle 75 "solid" "blue")))
-
-(define circles
-  (above top-row {??}))
+(define averagegrade
+  (/ gradesum {??}))
 </pre>
 
-Finally, we can define `bottom-row` just like before and then complete the definition of `circles`:
+
+Finally, we can define `num` just like before and then complete the definition of `averagegrade`:
 
 <pre class="scamper source">
-(import image)
+(define num
+  (length (list 50 39 45 42)))
 
-(define top-row (beside (circle 50 "outline" "red")
-                (circle 75 "solid" "blue")))
+(define gradesum
+  (+ 50 39 45 42))
 
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
+(define averagegrade
+  (/ gradesum num))
 
-(define circles
-  (above top-row bottom-row))
-
-circles
+averagegrade
 </pre>
 
 ## Top-down vs. Bottom-up Design
@@ -266,7 +178,7 @@ circles
 You might wonder which sort of design---top-down or bottom-up---to use when writing your programs.
 The short answer is that *it depends* on the kind of problem you are tackling and your own personal preference.
 Sometimes you might see how to immediately implement the smaller pieces of a program in which you can start with those pieces and then build up to the overall program.
-In other cases, you might not see the pieces and want to essentially outline how the program ought to behave in code, similar to the bulleted list we identified for the design of `shapes`.
+In other cases, you might not see the pieces and want to essentially outline how the program ought to behave in code.
 In this case, you can use top-down design to write this outline and then fill it in incrementally.
 Either strategy is valid---be willing to experiment early on with both styles to discover your preferences and be flexible in how you design your code!
 
@@ -276,25 +188,20 @@ Finally, let's look at the big picture.
 Take a look at the complete program that we wrote in the definitions pane:
 
 <pre class="scamper source">
-(import image)
+(define num
+  (length (list 50 39 45 42)))
 
-(define top-row
-  (beside (circle 50 "outline" "red")
-          (circle 75 "solid" "blue")))
+(define gradesum
+  (+ 50 39 45 42))
 
-(define bottom-row
-  (beside (circle 75 "outline" "blue")
-          (circle 50 "solid" "red")))
-
-(define circles
-  (above top-row bottom-row))
+(define averagegrade
+  (/ gradesum num))
 </pre>
 
 Note how our decomposition strategy has been *enshrined in the code*.
-That is, our approach to solving the problem of drawing the grid of circles is evident in the code:
+That is, our approach to solving the problem is evident in the code:
 
-> `circles` is defined to be a stack of a `top-row` and `bottom-row`.
-> Each of the rows contain two circles of varying color, shape, and sizes.
+> `averagegrade` is defined to be the division of `gradesum` and `num`.
 
 By employing algorithmic decomposition in our problem solving and programming, we not only gain the able to make tangible progress in solving the problem; our code is much more readable as a result!
 As we move forward in the course, *always* approach problems with decomposition in mind even if they are easy to solve at first.
@@ -307,16 +214,11 @@ Honing this skill early on in your programming journey will prepare you well for
 Here is an alternative version of the code to produce the image of this reading.
 
 ~~~racket
-(import image)
-
-(define circles
-  (above (beside (circle 50 "outline" "red")
-                 (circle 75 "solid" "blue"))
-         (beside (circle 75 "outline" "blue")
-                 (circle 50 "solid" "red"))))
+(define averagegrade
+  (/ (+ 50 39 45 42) (length (list 50 39 45 42))))
 ~~~
 
-Paste this code into a fresh `.scm` source file and verify that `circles` produces the same image as before.
+Paste this code into a fresh `.scm` source file and verify that `averagegrade` produces the same result as before.
 
 Compare and contrast the final version of the code the reading with this version.
 Answer each of the following questions in a few sentences each.
@@ -328,10 +230,3 @@ Answer each of the following questions in a few sentences each.
 +   Which version allows you to better predict the results *without* running the program?
     Why?
 
-### Check 2: Alternative Decomposition (‡)
-
-There are many ways to decompose a problem, many of which are equivalent, but many produce subtlety different solutions.
-The decomposition we chose in the reading was one where we recognized the image was *two rows stacked on top of each other*.
-Try writing the code corresponding to a decomposition where we think of the image as *two columns placed side-by-side*.
-Does this result in an identical image?
-Why or why not?
