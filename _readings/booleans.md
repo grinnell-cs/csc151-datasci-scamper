@@ -268,76 +268,18 @@ Note that we do *not* necessarily evaluate all of its parameters.
     * Rule A3a: If the evaluated parameter is false, replace the whole and expression by false (`#f`).
     * Rule A3b: If the evaluated parameter is true, remove the first parameter to `and` and continue.
 
-Let's look at a simple but silly example.
+Let's look at a simple example.
 
 ```
-    (* 2 (and (< 3 4) 5 (+ 1 2)))
+    (and (< 3 4) (= 4 4))
     ; Rule A3: More than one parameter
---> (* 2 (and #t 5 (+ 1 2)))
-    ; Rule A3b: Parameter (#t) is truish, so drop it.
---> (* 2 (and 5 (+ 1 2)))
-    ; Rule A3b: Parameter (5) is truish, so drop it
---> (* 2 (and (+ 1 2)))
-    ; Rule A2: Only one parameter, use it in place of the `and`.
---> (* 2 (+ 1 2))
---> (* 2 3)
---> 6
+--> (and #t (= 4 4))
+    ; Rule A3b: Parameter (#t) is true, so drop it.
+--> (and (= 4 4)
+    ; Rule A2: Exactly one parameter, use it in place of the `and`.
+--> (= 4 4)
+--> #t
 ```
-
-We won't usually use `and` with non-Boolean values.
-However, there are times that it can be useful to do so.
-Let's look at one possibility.
-
-```
-(define divide
-  (lambda (x y)
-    (and (not (zero? y)) (/ x y))))
-
-    (divide 4 2)
-    ; Procedure call: Replace x by 4 and y by 2 in the body.
---> (and (not (zero? 2)) (/ 4 2))
-    ; Rule A3: Evaluate the first parameter
---> (and (not #f) (/ 4 2))
---> (and #t (/ 4 2))
-    ; Rule A3b: First parameter is truish, so drop it
---> (and (/ 4 2))
-    ; Rule A2: Only one parameter.  Use it in place of the and.
---> (/ 4 2)
---> 2
-
-    (divide 4 0)
-    ; Procedure call: Replace x by 4 and y by 2 in the body.
---> (and (not (zero? 0)) (/ 4 0))
-    ; Rule A3: Evaluate the first parameter
---> (and (not #t) (/ 4 0))
---> (and #f (/ 4 0))
-    ; Rule A3a: If the first parameter is fale, replace the and by #f
---> #f
-```
-
-Note that in the second example, we never attempted the illegal division
-of 4 by zero.  Contrast this with what happens if we used a standard
-procedure, such as `list`.
-
-```
-    (list (not (zero? 0)) (/ 4 0))
---> (list (not #t) (/ 4 0))
---> (list #f (/ 4 0))
---> BOOM!  Can't divide 4 by zero.
-```
-
-Let's see the difference in Scamper.
-
-<div class="scamper-output output-prog">
-(and (not (zero? 2)) (/ 4 2))
-(list (not (zero? 2)) (/ 4 2))
-(and (not (zero? 0)) (/ 4 0))
-(list (not (zero? 0)) (/ 4 0))
-</div>
-
-Why do we receive a `BOOM!` in Scamper?
-This is because, like the not-a-number value `NaN` discussed in the [numbers](./numbers.html) reading, dividing by zero results in the `Infinity` value.
-Effectively, this might as well be an error because we can't do anything meaningful with `Infinity`!
 
 Now, what about `or`?  Here are the rules for or expressions.
 

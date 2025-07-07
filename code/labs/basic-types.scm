@@ -393,14 +393,14 @@
 ; Suppose we have a value, `val`. Write instructions that give val rounded
 ; to the nearest hundredth. For example,
 
-;     > (define val 22.71256)
+s;     > (define val 22.71256)
 ;     > (your-instructions val)
 ;     22.71
 ;     > (define val 10.7561)
 ;     > (your-instructions val)
 ;     10.76
 
-; Hint: You know how to round at the decimal point.  Thik about ways
+; Hint: You know how to round at the decimal point.  Think about ways
 ; to shift the decimal point.
 
 ; It's fine if your procedure does not work perfectly for all values.
