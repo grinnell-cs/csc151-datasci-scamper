@@ -6,10 +6,9 @@ summary: |
   `reduce`.
 prereqs: |
   [An abbreviated introduction to Scheme](../readings/intro-scheme).
-  [Data types](../readings/types).
+  [Data types](../readings/exprs-and-types).
   [Writing your own procedures](../readings/procedures).
-  [Lists and map](../readings/list-basics).
-  [Anonymous procedures](../readings/anonymous-procedures).
+  [List Basics](../readings/list-basics).
 ---
 
 We've started to see some significant power in using two "higher order" list operations, `map` and `apply`.  These are called "higher order" procedures because they take procedures as inputs.
