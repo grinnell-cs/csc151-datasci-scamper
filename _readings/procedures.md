@@ -25,22 +25,9 @@ For example, we might want to define a procedure, `square`, that takes as input 
 (square (square 2))
 </pre>
 
-As you may have noted, `square` can have multiple meanings.  If
-we're making drawings, it could also mean "make a square".  Let's
-consider an example.
+As you may have noted, `square` can have multiple meanings.
 
-<pre class="scamper source">
-(import image)
-
-(square 50 "solid" "red")
-(square 25 "solid" "blue")
-(above (square 60 "solid" "red")
-       (beside (square 40 "solid" "blue")
-               (square 40 "solid" "purple")))
-</pre>
-
-As you may recall, the `image` library already defines a `square` procedure, so it's unlikely to be a good idea for us to define our own `square` procedure, whether for numbers or images.
-More generally, when we choose names in Scheme, we should try not to conflict with existing names.
+An aside note: when we choose names in Scheme, we should try not to conflict with existing names (here `square` is an existing name in Scheme).
 Sometimes Scheme will stop us from reusing a name; other times it will blithely move along, letting us break things through such reuse.
 
 So, how do we define these procedures?  Read on and see.
@@ -103,14 +90,11 @@ You may note in the last line that when we asked Scamper for the "value" of `squ
 Compare that to other values we might define.
 
 <pre class="scamper source">
-(import image)
 (define x 5)
 x
 (define phrase "All mimsy were the borogoves")
 phrase
-(define red-square (rectangle 75 75 "solid" "red"))
-red-square
-(define multiply * )
+(define multiply *)
 multiply
 </pre>
 
@@ -147,113 +131,68 @@ the conversion that happens at each step.
 --> 16
 ```
 
-What about the colored squares?
-
-If we want a procedure to make squares, we'll just call the `rectangle` procedure, using the same value for the width and height.
-
-<pre class="scamper source">
-(import image)
-
-(define color-square
-  (lambda (side color)
-    (rectangle side side "solid" color)))
-</pre>
-
-What happens if we call `color-square` on inputs of `50` and `"red"`?
-Scheme substitutes `50` for `side` and `"red"` for color, giving us `(rectangle 50 50 "solid" "red")`.  
-And, as we saw in the examples above, that's a red square of side-length 50.
-
-<pre class="scamper source">
-(import image)
-
-(define color-square
-  (lambda (side color)
-    (rectangle side side "solid" color)))
-
-(color-square 50 "red")
-</pre>
-
 ## Another example
 
-The square is a relatively simple example.  Consider, for example, the
-following definition of a simple drawing of a house.
+The above example, `square-number` was relatively straight forward. Let's try something more complex.
+
+A _z-score_ is a standard is a way of measuring how far a given piece of data is away from the mean (average) of a set of data.
+
+`z-score = (x - mean) / (standard deviation)`
+
+In this formula, x is the piece of data we want to measure and give a score. You'll notice that this formula requires us to know something about all of the data to start with: namely, the mean and the standard deviation. Don't worry if you're not sure what all these words mean (you can read [here](https://en.wikipedia.org/wiki/Standard_score) for more info if you'd like), we just need to understand that this a formula I'd like to compute.
+
+Say there is some data with a mean of `5` and a standard deviation of `.4`. How far away is `x = 6` from the mean? We can use the z-score:
 
 <pre class="scamper source">
-(import image)
-
-(overlay/align "middle" "bottom"
-             (overlay/align "left" "center"
-                            (circle 3 "solid" "yellow")
-                            (rectangle 15 25 "solid" "brown"))
-             (above (triangle 50 "solid" "red")
-                    (rectangle 40 50 "solid" "black")))
+(/ (- 6 5) .4)
 </pre>
 
-What if we want to make houses with different sizes or colors?
-We could copy and paste the code.
-However, if we changed our mind about how to structure our houses, we'd then have to update every copy.
-We'd be better off writing a procedure that takes the size and color
-as parameters.
+`x=6` has a z-score of 2.5.
 
-How would we write `house`?
-That's a question for another day.
-Or perhaps for the lab.
-
-For now, let's consider a simpler version, one that does not include the door.
-Remember: Decomposition is your friend!
-If we did not care about resizing the house, we might just write an expression like the following.
+What if we want to calculate the z-score for another piece of data? We could copy and paste the code and change the values. However, it might be more efficient to write a procedure that takes `x` as a parameter.
 
 <pre class="scamper source">
-(import image)
+(define zscore
+  (lambda (x)
+    (/ (- x 5) .4)))
 
-(above (triangle 50 "solid" "red")
-       (rectangle 40 50 "solid" "black"))
+(zscore 6)
+(zscore 5.5)
 </pre>
 
-But we'd like to "parameterize" the code to take the size as an input.
-Let's say that the size corresponds to the side-length of the triangle (or the height of the main body of the house).
-We will replace each `50` by `size` and replace `40` by `(* 4/5 size)`.
-Let's see how that works.
+
+This works pretty well! Is it readable and understandable to an outside observer? Maybe. Could we improve it? Definitely. There are a number of ways we could do this. We could parameterize the mean and standard deviation, in addition to the piece of data we're trying to evaluate.
 
 <pre class="scamper source">
-(import image)
+(define zscore2
+  (lambda (x mean std)
+    (/ (- x mean) std)))
 
-(define simple-house
-  (lambda (size)
-    (above (triangle size "solid" "red")
-           (rectangle (* 0.80 size) size "solid" "black"))))
-(simple-house 20)
-
-(simple-house 30)
+(zscore2 6 5 .4)
+(zscore2 5.5 5 .4)
 </pre>
+This has the benefit of allowing the user to also use this code on other data sets (ones with different means and standard deviations). It also makes clear to the reader what two of the values represent, by naming them `mean` and `std`. 
 
-The next step might be to add parameters for the color of the body and the color of the roof.
 
 ## Zero-parameter procedures
+We've written procedures so that they take one or more parameters. However, there are also advantages to writing procedures that take no parameters. For now, just remember it's a possibility. In the future, you'll see when it's useful.
 
-We've written procedures so that they take one or more parameters.
-However, there are also advantages to writing procedures that take no parameters.
-For now, just remember it's a possibility.
-In the future, you'll see what it's useful.
 
 ## Some benefits of procedures
 
 As you may have figured out by now, there are many benefits to defining your own procedures.
 One of the most important is _clarity_ or _readability_.
-Another programmer will likely spend less effort understanding `(simple-house 20)` than they will trying to understand the more complex `above` expression involving triangles and rectangles.
-The should be able to see that the first is intended to be a house.
-The second could be anything, at least until you see it.
-(As you may recall from the [decomposition lab](../labs/decomposition.html), the code to make a simple tree and the code to make a simple house look very similar.)
+Another programmer will likely spend less effort understanding `(zscore2 5)` than they will trying to understand the expression without any context.
 
-As importantly, the other programmer may also find it easier to _write_ programs using `simple-house` than the much longer series of expressions.
+As importantly, the other programmer may also find it easier to _write_ programs using `zscore2` than the much longer series of expressions.
 
 By using a name for a set of code, we are employing the concept of _abstraction_.
 That is, because the person calling the procedure knows _what_ the procedure does rather than _how_ it achieves that result, we have abstracted away some of the details.
-Of course, for someone to know what the procedure does, you need to choose a good name.
-`img1` tells us very little, other than that it's an image.
-`house` or `tree` gives us much more of a sense of what the procedure does.
-Be thoughtful in your choice of procedure names.
-(Also be thoughtful in your choice of parameter names---and any names, for that matter.)
+Of course, for someone to know what the procedure does, you need to choose a good name for the procedure and for the parameters. 
+`x` tells us very little.
+`mean` or `std` gives us much more of a sense of what the procedure does.
+Be thoughtful in your choice of names!
+
 
 There are benefits to abstraction and the use of procedures other than readability.
 For example, it may be that you discover a more efficient way to do a computation.
@@ -327,11 +266,7 @@ subtracts 2 from that number.
     In program: "hello"
 ```
 
-### Check 2: Building blocks (‡)
-
-Write a procedure, `(block color)`, that takes a color as input and builds a 40x20 "block" of the given color (a solid rectangle).
-
-### Check 3: Exploring steps
+### Check 2: Exploring steps
 
 Show the steps involved in computing `(square (subtract2 5))` and
 `(subtract2 (square 5))`.

@@ -19,7 +19,7 @@ partner using a starter file.
 * [procedures.scm](../code/labs/procedures.scm)
 
 
-Remember to employ good pair programming practices as discussed in the [previous lab]({{ "/labs/decomposition.html" | relative_url }})!
+Remember to employ good pair programming practices as discussed previously!
 
 > +   One person, the *driver*, is in control of keyboard.
 >     They focus on the immediate task of designing and coding a solution, speaking aloud about their design thoughts as they work.

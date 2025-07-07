@@ -49,17 +49,6 @@
   lab:
     - page: /labs/basic-types.html
 
-- topic: Algorithmic decomposition
-  abbrev: decomposition
-  slides_link: 
-  summary: |
-    We consider a key technique in algorithmic thinking, how one “decomposes” a
-    more complex problem or algorithm into simpler ones.
-  reading:
-    - page: /readings/decomposition.html
-  lab:
-    - page: /labs/decomposition.html
-
 - topic: Reading and writing procedures
   abbrev: procedures
   summary: |
@@ -69,6 +58,7 @@
     Scheme/Racket programs.
   reading:
     - page: /readings/procedures.html
+    - page: /readings/procedures-and-mental-models.html
   lab:
     - page: /labs/procedures.html
 
@@ -113,6 +103,17 @@
   todo:
     - Incorporate sort and tally.
     - Consider incorporating the old /labs/drawing-lists.html
+
+- topic: Algorithmic decomposition
+  abbrev: decomposition
+  slides_link:
+  summary: |
+    We consider a key technique in algorithmic thinking, how one “decomposes” a
+    more complex problem or algorithm into simpler ones.
+  reading:
+    - page: /readings/decomposition.html
+  lab:
+    - page: /labs/decomposition.html
 
 - topic: Style and List Processing Practice
   abbrev: higher-order-functions

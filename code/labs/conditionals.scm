@@ -25,26 +25,26 @@
 
 ; Consider the following code snippet:
 
-(define foo
+(define f
   (lambda (x1 x2)
     (if (< x1 x2)
         #t
         #f)))
 
-(define bar
+(define g
   (lambda (x1 x2)
     (< x1 x2)))
 
 ; Here's a trace of two similar expressions.
 
-;     (foo 2 4)
+;     (f 2 4)
 ; --> (if (< 2 4) #t #f)
 ;     ; Evaluate the test
 ; --> (if #t #t #f)
 ;     ; The test is truish; Use the consequent
 ; --> #t
 
-;     (bar 2 4)
+;     (g 2 4)
 ; --> (< 2 4)
 ; --> #t
 
@@ -58,16 +58,16 @@
 ; with the exploration pane that your final value coincides with the
 ; result of evaluating the expression in Scheme/Scamper.
 
-; a. (foo 5 3)
+; a. (f 5 3)
 ;
 ; <TODO: give your trace here>
 
-; b. (bar 5 3)
+; b. (g 5 3)
 ;
 ; <TODO: give your trace here>
 
 ; c. What do you see as the similarities and differences between
-; `foo` and `bar`?
+; `f` and `g`?
 ;
 ; <TODO: give your answer here>
 
