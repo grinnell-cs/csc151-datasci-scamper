@@ -113,110 +113,14 @@ Or worse yet, the downturn might be so bad that the startup needs to do the righ
 
 Observe that we have transformed our list of salaries into a list of booleans indicating whether we should keep the employee with that salary.
 
-## Transforming collections of data with `map`.
+## The `apply` procedure
 
-This last example alludes to the idea that `map` isn't constrained to keep the type of the elements of the resulting list the same as the old list.
-Indeed, the power of the `map` is we can transform the list in arbitrary ways as long as those transformations are independent between list elements.
-As long as we can recognize the "collection" being transformed in our problem, we can write solutions in surprisingly elegant ways.
-
-As an example, consider the following code that draws a collection of green circles beside each other:
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius)
-    (circle radius "solid" "green")))
-
-(beside (green-circle 20)
-        (green-circle 40)
-        (green-circle 60)
-        (green-circle 40)
-        (green-circle 20))
-</pre>
-
-Using decomposition, we have organized this image as a bunch of green circles of different sizes.
-But look at that redundancy!
-Calling `green-circle` many times is undesirable: it takes time and effort to read and write the code.
-Furthermore, the "repetitive" nature of the image isn't truly captured in the code.
-This keeps us from generalizing the function further, *e.g.*, varying the numbers of `green-circles` in the figure.
-
-However, if we instead decompose the problem as a *transformation over lists*, we'll arrive at a better solution.
-But where is the list in this code?
-While there isn't a list anywhere in the code for us to immediately `map` over, we do note that the image can be thought of as a _collection of circles_.
-
-With this in mind, we can decompose the problem of generating a collection of circles into creating a single circle.
-The way we do this is with the `green-circle` function, passing in the desired size for one of the circles.
-The _size_ is therefore the element we are transforming!
-We're transforming a size into a circle by way of the `green-circle` function.
-We can then transform a _collection of sizes_ into a _collection of circles_ by lifting `green-circle` using `map`:
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius)
-    (circle radius "solid" "green")))
-
-(define circles (map green-circle (list 20 40 60 40 20)))
-
-circles
-</pre>
-
-## Working with lists of values
-
-We aren't done yet!
-This isn't a single image composed of a bunch of green circles.
-This is a *list* of green circles of different sizes (note the `(list ... )` surrounding the circles).
-
-As with the original version of the code, we need to use `beside` to combine the circles.
-However, if we simply pass this expression to `beside`, we get an error:
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius)
-    (circle radius "solid" "green")))
-
-(define circles (map green-circle (list 20 40 60 40 20)))
-
-(beside circles)
-</pre>
-
-Why does this error occur?
-Let's think carefully about the types of the values involved:
-
-+ `beside` is a function that takes a collection of images, one per argument, *e.g.*, `(beside image1 image2 image3 image4 image5)`.  Each argument is a single image.
-+ `circles` is defined to be `(map green-circle (list 20 40 60 40 20))` which is a *list* of images.
-
-Finally, consider the complete expression `(besides circles)`.
-Each argument to `besides` should be a *single* image but `circles` is a *list of images* instead.
-That's where our error arises!
-
-Ultimately, we have to, somehow, pass in each image in the list `circles` to each argument position of `besides`.
-How do we do this?
-It turns out we have to employ an additional standard library function of Scheme to do this, `apply`.
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius)
-    (circle radius "solid" "green")))
-
-(define circles (map green-circle (list 20 40 60 40 20)))
-
-(apply beside circles)
-</pre>
-
-More generally, `apply` is a helpful standard library function when working with lists of arguments.
-`apply` takes two arguments:
+`apply` is a helpful standard library function when working with lists of arguments. `apply` takes two arguments:
 
 +   A function to run or *apply* on a collection of arguments.
 +   The collection of arguments to apply to the function, stored in a list.
 
-As a simpler example of `apply`, consider the simple `(+)` function which can take any number of arguments:
+As a simple example of `apply`, consider the simple `(+)` function which can take any number of arguments:
 
 <pre class="scamper source">
 (+ 1 2 3 4 5)
@@ -233,49 +137,6 @@ To pass this list of numbers to `(+)`, we can use the `apply` function:
 <pre class="scamper source">
 (apply + (list 1 2 3 4 5))
 </pre>
-
-## Pause for reflection
-
-So let's summarize the image code we've written:
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius) 
-    (circle radius "solid" "green")))
-
-(define circles
-  (map green-circle (list 20 40 60 40 20)))
-
-(define circles-besides
-  (apply beside circles))
-
-circles-besides
-</pre>
-
-We've decomposed the problem of drawing the circles not as a series of repeated calls to `green-circles` but as a *collection* that is the result of *transforming* the sizes of the circles into green circles.
-While this interpretation may have come less naturally to you, I would argue that once you understand transformations with `map` that this is a more readable and concise solution to the problem.
-
-As a final note, I'll mention that it is more flexible, too.
-For example, there's nothing special about the fact that we wanted the circles besides each other.
-The following modified code leverages our abstractions to get a different effect with minimal effort:
-
-<pre class="scamper source">
-(import image)
-
-(define green-circle
-  (lambda (radius) 
-    (circle radius "solid" "green")))
-
-(define circles
-  (map green-circle (list 20 40 60 40 20)))
-
-(apply above circles)
-</pre>
-
-This is the power of decomposition in action!
-In particular, if we use appropriate *abstractions*, we can create highly reusable code that both captures our intent but can be used in other contexts with minimal modification.
 
 ## Thinking with types
 

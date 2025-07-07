@@ -90,30 +90,31 @@
     - Do we also include `car`, `cdr`, and `cons` here?  Do we
      perhaps include a separate day?
 
-- topic: Processing lists
+- topic: Processing lists, algorithmic decomposition
   abbrev: processing-lists
   slides_link:
   summary: |
     We explore ways to use lists to work with collections of drawings
-    using "the big three" list procedures: `map`, `reduce`, and `filter`.
+    using "the big three" list procedures: `map`, `reduce`, and `filter`. We also consider a key technique in algorithmic thinking, how one “decomposes” a
+    more complex problem or algorithm into simpler ones.
   reading:
     - page: /readings/list-big-three.html
+    - page: /readings/decomposition.html
   lab:
     - page: /labs/lists-more.html
   todo:
     - Incorporate sort and tally.
     - Consider incorporating the old /labs/drawing-lists.html
 
-- topic: Algorithmic decomposition
-  abbrev: decomposition
+- topic: Breather Day
+  abbrev: breather1
   slides_link:
   summary: |
-    We consider a key technique in algorithmic thinking, how one “decomposes” a
-    more complex problem or algorithm into simpler ones.
+     We take a day to review important topics, and catch up on things.
   reading:
-    - page: /readings/decomposition.html
+    - None today
   lab:
-    - page: /labs/decomposition.html
+    - TBD
 
 - topic: Style and List Processing Practice
   abbrev: higher-order-functions
