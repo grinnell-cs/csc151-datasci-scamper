@@ -5,7 +5,6 @@
 ;; Acknowledgements:
 ;;   ACKNOWLEDGEMENTS HERE
 
-(import image)
 (import lab)
 (import test)
 
@@ -289,38 +288,11 @@
 
 ; One of the primary uses for `let` bindings is to remove redundancy
 ; from code _after_ we have written an initial draft. Remove the
-; redundancy from the following functions by rewriting each using a
+; redundancy from the following function by rewriting each using a
 ; a `let`/`let*` binding. Ensure that the test cases continue to pass
 ; for each function!
 
 ; (Side A drives!)
-
-(define trees
-  (lambda (sz)
-    (beside
-      (above (overlay
-               (triangle (* sz 1.5) "outline" "black")
-               (triangle (* sz 1.5) "solid" "green"))
-             (overlay
-               (rectangle (/ sz 2) (* sz 2) "outline" "black")
-               (rectangle (/ sz 2) (* sz 2) "solid" "brown")))
-      (above (overlay
-               (triangle (* sz 1.5) "outline" "black")
-               (triangle (* sz 1.5) "solid" "green"))
-             (overlay
-               (rectangle (/ sz 2) (* sz 2) "outline" "black")
-               (rectangle (/ sz 2) (* sz 2) "solid" "brown")))
-      (above (overlay
-               (triangle (* sz 1.5) "outline" "black")
-               (triangle (* sz 1.5) "solid" "green"))
-             (overlay
-               (rectangle (/ sz 2) (* sz 2) "outline" "black")
-               (rectangle (/ sz 2) (* sz 2) "solid" "brown"))))))
-
-(display (description "(You should see three trees below!)"))
-(display (trees 100))
-
-; (Side B drives!)
 
 (define adjusted-diff-of-extremes
   (lambda (lst)

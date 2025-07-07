@@ -1,0 +1,12 @@
+Information on list of US State Capitals
+========================================
+
+Columns: 
+
+0: State Name
+1: Capital Name
+2: Latitude
+3: Longitude
+
+Data obtained from <http://www.xfront.com/us_states/> on 2017-09-10.
+Samuel A. Rebelsky corrected "Helana" was corrected to "Helena".
