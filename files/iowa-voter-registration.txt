@@ -1,0 +1,28 @@
+Iowa Voter Registration
+=======================
+
+Iowa voter registration numbers from January 2000 to February 2018.
+
+Columns
+
+*  0: Date (in MM/DD/YYYY HH:MM:SS xM format)
+*  1: FIPS code
+*  2: County Name
+*  3: Active Democrats
+*  4: Active Republicans
+*  5: Active Libertarians
+*  6: Active No-Party
+*  7: Active Other
+*  8: Active Total
+*  9: Inactive Democrats
+* 10: Inactive Republicans
+* 11: Inactive Libertarians
+* 12: Inactive No-Party
+* 13: Inactive Other
+* 14: Inactive Total
+* 15: Grant Total
+* 16: Latitude
+* 17: Longitude
+* 18: Coordinates
+
+Downloaded from <https://data.iowa.gov/Communities-People/State-of-Iowa-Monthly-Voter-Registration-Totals-by/cp55-uurs> on 2018-02-14.

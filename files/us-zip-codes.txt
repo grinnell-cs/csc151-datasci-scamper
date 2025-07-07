@@ -1,0 +1,21 @@
+US Zip Codes 
+=============
+
+Zip codes and other information of cities in the US.
+
+Columns
+
+* 0: Zip code
+* 1: Latitude
+* 2: Longitude
+* 3: City
+* 4: State
+* 5: County
+
+Dowloaded from <https://www.gaslampmedia.com/download-zip-code-latitude-longitude-city-state-county-csv/> on 2017-09-10.
+
+Cleanup by Samuel A. Rebelsky on 2017-09-11: Removed quotation marks from
+around some longitudes.  Those should be treated as numbers, not strings.
+
+Cleanup by Samuel A. Rebelsky on 2017-09-12: "Federated States of Micro"
+should be "Federated States of Micronesia".

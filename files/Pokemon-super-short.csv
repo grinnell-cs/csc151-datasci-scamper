@@ -1,0 +1,6 @@
+#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False
+4,Charmander,Fire,,309,39,52,43,60,50,65,1,False
+7,Squirtle,Water,,314,44,48,65,50,64,43,1,False
+12,Butterfree,Bug,Flying,395,60,45,50,90,80,70,1,False
+17,Pidgeotto,Normal,Flying,349,63,60,55,50,50,71,1,False

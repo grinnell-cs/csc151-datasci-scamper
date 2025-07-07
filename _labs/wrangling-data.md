@@ -2,7 +2,7 @@
 title: Wrangling Data
 ---
 
-This week, you learned about lists and how to manipulate them using `map`, `filter`, and `reduce`.
+Recently, you learned about lists and how to manipulate them using `map`, `filter`, and `reduce`.
 Thinking about list operations in terms of _transformations_ is a powerful method of analyzing data.
 In today's lab, you'll use this style of programming to pose and answer questions about real-world data.
 

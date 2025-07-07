@@ -1,6 +1,6 @@
 ;;; Wrangling Data
 ;;;   Answering questions about real-world data (a password leak, in particular!)
-;;;   CSC-151-XX 24fa.
+;;;   CSC-151-XX TERM HERE
 ;;;
 ;;; Authors:
 ;;; * Your Name Here

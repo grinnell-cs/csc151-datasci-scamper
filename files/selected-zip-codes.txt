@@ -1,0 +1,17 @@
+Selected US Zip Codes 
+=====================
+
+Zip codes and other information of cities in the US.
+
+Columns
+
+* 0: Zip code
+* 1: Latitude
+* 2: Longitude
+* 3: City
+* 4: State
+* 5: County
+
+Original file dowloaded from <https://www.gaslampmedia.com/download-zip-code-latitude-longitude-city-state-county-csv/> on 2017-09-10.
+
+Eeements selected with `grep '^"[0-9][0-9]123"'`.

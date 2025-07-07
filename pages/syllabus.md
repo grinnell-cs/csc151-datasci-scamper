@@ -3,7 +3,7 @@ title: Functional Problem Solving
 permalink: /syllabus/
 ---
 
-# CSC-151-03 (Functional Problem Solving, Fall 2024)
+# CSC-151 (Functional Problem Solving, Fall 2025)
 
 ## About
 
@@ -99,7 +99,7 @@ permalink: /syllabus/
   {% endif %}
 </dl>
 
-Welcome to CSC 151! In this class, you will learn computer programming using the Scamper programming language. You do not need any prior knowledge of computer science or programming. Section 03 will focus on image making and manipulation.
+Welcome to CSC 151! In this class, you will learn computer programming using the Scamper programming language. You do not need any prior knowledge of computer science or programming. All sections this semester will focus on data science.
 
 
 ## Learning Objectives
@@ -139,7 +139,7 @@ Email
 : Your instructor will send course announcements via email. You are responsible for reading all email from your instructor.
 
 Microsoft Teams
-: Our class has a Teams channel for Q\&A shared by all three sections. If you have a question and others in the class could benefit from its answer, please post in the teams Q\&A channel.
+: Our class has a Teams channel for Q\&A shared by all four sections. If you have a question and others in the class could benefit from its answer, please post in the teams Q\&A channel.
 
 Getting in touch with your instructor
 : If you need to get in touch with me privately, use email or teams. We try to reply to messages within about 24 hours, excluding weekends and holidays. If you do not hear back within that amount of time, please send a reminder.
@@ -178,23 +178,17 @@ Reading responses
 Labs
 : During each class meeting, you will work with a partner to complete programming exercises to practice the concepts from the readings
 
-Take-Home Assessments
-: About once per week you will complete an individual programming assignment where you apply and extend concepts from readings and labs. No programming assignment on midterm exam weeks.
+Coding Challenges
+: About once per week you will complete an individual programming assignment where you apply and extend concepts from readings and labs. 
 
 Final project
 : The final programming assignment will be more open ended and completed in teams.
 
 Quizzes
-: About once per week, you will complete an individual, 15-minute quiz in class on paper (time extended according to any accommodations)
+: About once per week, you will complete an individual, 15-minute quiz in class on paper.
 
-Exams
-: 4 times during the semester, you will complete an individual midterm exam in class on paper, lasting the entire class period (time extended according to any accommodations)
-
-Pre-reflections
-: Before each take-home assessment and each exam, you will answer some reflection questions to help you prepare and feel confident to dive in. 
-
-Post-reflections
-: After each take-home assessment and each exam, you will answer some reflection questions to help you understand what went well and what went poorly.
+Misc activities
+: Miscellanious activities, usually aimed at meta-cognitive learning. For example you may be asked to reflect on how a particular assessment went, to help you understand what went well and what went poorly. 
 
 ## Collaboration and Resources
 
@@ -216,17 +210,21 @@ Labs
 - You may get help from course staff and peers outside your team
 - Make sure every team member can explain your team's answers
 
-Take-home Assessments
+Coding Challenges
 : 
 - Completed individually
-- As help resources, you may use **only**:
+- As help resources, you are highly encouraged to use the following:
   - the course website
   - your own class notes (those you have written yourself)
   - your own lab solutions (written by you and your lab partners)
-- You may get help from course staff, including evening tutors, mentors and instructors
-- You may **not** discuss the assessment with or get help from peers, inside or outside the class
+  - help from course staff, including evening tutors, mentors and instructors
+- The following are allowed, but not recommended in order to get as much learning as possible from the course:
+  - You may discuss the assessment with peers, inside or outside the class. However, every student should write their own solution in code.
+  - You are allowed to use other resources (maybe most top of your mind: the internet and all its resources).
+  - ANY resource used under this category ("not recommended") **MUST** be appropriately cited. This includes: Any person, any website, any text, etc. If you used Generative AI to write code and/or text you must include in your citation the exact prompt you used and the exact results given by the GenAI. 
+
  
-Quizzes and Exams
+Quizzes 
 : 
 - Completed individually in class
 - No form of collaboration is permitted
@@ -236,6 +234,7 @@ Final project
 - Completed in groups of 3–4
 - All members should contribute equally to the project
 - You may get help from course staff and peers outside your team
+- You are allowed to use other resources, see the policy under Coding Challenges. 
 
 ## Grading
 
@@ -253,91 +252,90 @@ Labs
 - **S** = Satisfactory
 - **N** = Not satisfactory  
 
-Take-Home Assessments and the Final Project
+Coding Challenges and the Final Project
 : 
 - Graded **EMRN** based on correctness and following instructions  
   * **E** = Exceeds expectations  
   * **M** = Meets expectations  
   * **R** = Needs revision  
   * **N** = Not complete (did not make a good faith effort)  
-- Criteria for each letter grade are given on the homework instructions for each assessment.
+- Criteria for each letter grade are given on the instructions for each assessment.
 
-Learning Objectives (Quizzes and Exams)
+Learning Objectives (Quizzes)
 : 
-* You will demonstrate your mastery of each Learning Objecive (LO) in assessments (quizzes or exams).   
-* Each quiz gives you an opportunity to demonstrate mastery of **one** LO.  
-* Each exam gives you an opportunity to demonstrate mastery of **every** LO that has been covered in class up until the date of the exam. There will be one exam problem for each LO.  
-* Each LO is graded **S/N**
+* You will demonstrate your mastery of each Learning Objecive (LO) in quizzes.
+* Each quiz problem gives you an opportunity to demonstrate mastery of **one** LO.  
+* Each problem is graded **S/N**
   * **S** = Satisfactory (demonstrated mastery)  
   * **N** = Not _Yet_ Satisfactory (did not yet demonstrate mastery)  
-* Once you have demonstrated mastery of a certain LO, you do not need to be assessed on that LO again. That is, you can skip exam problems about LOs you have already mastered.
+* Once you have demonstrated mastery of a certain LO, you do not need to be assessed on that LO again. On the flipside, if you receive **N** on a quiz problem, you'll have the opportunity to demonstrate your mastery of that topic on a future quiz. 
 
 ### Final grade
 
-Major letter grades for the course are determined by _tiers_, a collection of required grades from your demonstration exercises and core exams. You will receive the grade corresponding to the tier for which you meet _all_ of the requirements. For example, if you qualify for the A tier in one category and the C tier in another category, then you qualify for the C tier overall as you only meet the requirements for a C among all the categories.
+This class uses different ideas of "ungrading" and "specifications based grading". It is our hope that these methods of evaluation will remove stress and focus all of our attention on learning as much as possible. 
 
-{: .table}
-| Tier  | Take-Home Assessments (8 total)    | Learning Objectives (16 total)  | Project (1) |
-| ----- | ---------------------------------------------- | ------------------ | ----------- |
-| **C** | No **N**s, at most 2 **R**s, at least 2 **E**s | At least 10 **S**s | **R**       |
-| **B** | No **N**s, at most 1 **R**, at least 4 **E**s  | At least 12 **S**s | **M**       |
-| **A** | No **N**s or **R**s, at least 6 **E**s         | At least 14 **S**s | **E**       |
+You may earn a **C** in this class by earning the following grades:
+- At most 2 **R**'s and the remaining **M**'s  on coding challenges and the final project.
+- An **S** on at least 12 of the 18 quiz problems (Learning Objectives).
+- A maximum of 12 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**. 
 
-- **D**: two of the requirements of a C are met.
-- **F**: zero or one of the requirements of a C are met.
+To earn a **B** in this class you must receive the following grades:
+- An **M** or better on all Coding Challenges and the final project.
+- An **S** on at least 15 of the 18 quiz problems (Learning Objectives).
+- A maximum of 6 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**.
 
-**Plus/minus grades**
+To earn an **A** in this class, you must do all of the requirements for a **B**, plus earn:
+- An **E** on the final project
+- An **E** on at least 6 of the 8 coding challenges
+- An **S** on all 18 of the 18 quiz problems (Learning Objectives). 
 
-To earn a plus/minus grade, you must have completed one tier’s requirements and partially meet the next tier’s requirements. This will arise in two situations: **C/B** and **B/A**. For example, you may completely meet the requirements of a **C** and meet the requirements of a **B** for take-home assessments but not for core learning outcomes.
+Other grades are possible as well (A-, B+, B-, C+, D, F). You may earn an **A-** or **B+** by meeting all of the requirements of the **B** grade, and one (**B+**) or two (**A-**) requirements from the **A** grade. You may earn a **B-** or **C+** by meeting all of the requirements of the **C** grade and one (**C+**) or two (**B-**) of the requirements of the **B** grade. Earn a **D** if two of the requirements of a **C** are met. Earn an **F** if zero or one of the requirements of a **C** are met.
 
-+ If you have completed **two** of the upper tier's requirements, then you earn a minus grade for the higher tier, _i.e._, B- if you are between a C and B.
-+ If you have completed **one** of the upper tier's requirements, then you earn a plus grade for the lower tier, _i.e._, C+ if you are between a C and B.
-
+*Important Note*
 Be aware that if you are at an A tier for one deliverable category but at a C tier for another, then you fully qualify for the C tier and partially meet the requirements of the B tier and thus would be considered for plus/minus grades in the B/C range.
 
-**Reading responses, labs, and reflections**
+**Attendance Policy**
 
-- You may earn an N  **at most six** timely work deliverables (reading responses, labs, and reflections) without penalty. Note that unsubmitted work earns an N.
-- After the first six deliverables, your overall letter grade will lower by **one-third of a letter grade** (_i.e._, A becomes A-, B- becomes a C+, C becomes a D) for **every two additional deliverables you miss**. 
+In class attendance is important to your learning this semester, thus attendance is required. Receiving a positive note on attendance includes:
+- Arriving to class on time
+- Staying until the end of class
+- Acting as a respectful class member to peers
+- Actively engage and participate in class
 
-The following table summarizes this policy for concrete numbers of deliverables through 12, although the policy extends to any number of deliverables.
+When you miss a class day (excused or unexcused) you are still responsible for the material covered in class. You should review readings, labs, and notes from class and consult with peers who were in class the day you missed to catch up. You should complete the days lab individually. If you plan to miss a quiz, talk with the instructor as soon as possible. 
 
-{: .table}
-| Ns earned on timely work| Letter adjustment |
-| --------------------- | ----------------- |
-| 0–6 deliverables      | -0	            | 
-| 7 deliverables        | -1/3	            | 
-| 8 deliverables        | -1/3	            | 
-| 9 deliverables        | -2/3	            | 
-| 10 deliverables       | -2/3	            | 
-| 11 deliverables       | -1	            | 
-| 12 deliverables       | -1	            |
+If you miss a significant number of class days (including via excused absences) it may be difficult for you to meet the expectations of the course. Additionally, if you miss more than one class period in a row without notice to me, you should expect to hear from me as well as student advising (via SAL). The goal here is not to scold you, but to make sure you’re aware of the situation and have the information you need to stay on track or withdraw from the course if completing it successfully is no longer feasible.
 
-### Deadlines and Late Days
+*Unexcused absences*: An excessive number of unexcused absences (including being marked as late or not participating) will impact your grade in the following manner. If you are unexcused for more than 3 days, you may not receive a grade higher than a B+ in our class. Similarly, if you are unexcused for more than 6 days you may not receive higher than a C+ in our class. Finally, if you are unexcused for more than 9 days, you may not receive a grade higher than a D.
+
+Excused absences: You may be excused for a class under certain situations. If you plan to observe holy days that coincide with class meetings or assignment due dates to consult with your instructor in the first three weeks of classes so that we may reach a mutual understanding of how you can meet the terms of your religious observance and also the requirements for this course. Likewise, please discuss with me in the first three weeks of the semester if you will be absent due to athletic events.
+
+You may also be excused from class in the even of an emergency or illness. I will not require proof or details, just please inform me as soon as you are able. If you attend class with respiratory symptoms, please consider wearing an N-95 mask to protect others.
+
+
+### Deadlines and Late Policy
 
 Check the schedule to see your assignments. Check Gradescope to see the time of day that each assignment is due. Due times are typically as follows:
 
 Readings
-: 10 pm the day BEFORE it appears on the schedule  
+: 10:30 pm the day BEFORE it appears on the schedule  
 
 Labs
-: 10 pm on the next lab day (except around breaks and exams)  
+: 10:30 pm on the next lab day (except around breaks)  
 
-Take-Home Assessments
-: 10 pm the day it appears as "due" on the schedule  
+Coding Challenges
+: 10:30 pm the day it appears as "due" on the schedule  
 
-Reflections
-: 10 pm the day it appears on the schedule
+Misc
+: 10:30 pm the day it appears on the schedule, OR, in class depending on the assignment
 
-**Late Days**
+**Late Policy**
 
-* Late days are a currency that you can spend to turn in assignments late.
-* You may spend up to **15 late days** over the course of the semester.
-* You may spend late days on reading responses, labs, pre-reflections, post-reflections, take-home assessments, and take-home assessment revisions.  
-* You may spend one late day to submit any of the named assignments up to 24 hours late.  
-* You may spend up to two late days on any given assignment, for a maximum lateness of 48 hours on that assignment.
-* If you submit a late lab or reading response that earns an N, late days will not be charged.
-* You are responsible for keeping track of your own late days.  
+* You may turn in any lab or coding challenge up to 48 hours late, with no penalty. You do not need prior approval to take advantage of this grace period. Your instructor does appreciate knowing if you plan to turn in things late.
+* If you believe you will need an extension of more than 48 hours, please talk with me as soon as possible. Assignments turned in more than two days late, without prior approval (before the original due date) of the instructor will not be accepted.
+* Our course will move quickly, therefore it is in your best interest to always follow the posted deadlines. 
+* Please keep in mind that if you turn in work late, even using the grace period, we may not be able to grade it as quickly as you or I hope.
+
 
 ### Redo and Revision Opportunities
 
@@ -345,41 +343,23 @@ We offer redo and revision opportunities because we believe that your final grad
 
 Here are redo/revision policies for each type of coursework:
 
-Learning Objectives (Quizzes and Exams)
+Quizzes
 : 
-    * When you earn an N on an LO, you can attempt to demonstrate mastery on that LO again on every following exam.  
-    * The final exam allows you to redo past LOs but does not introduce new LOs, ensuring that you get a minimum of 2 tries to earn an S on every LO.  
+    * When you earn an N on an LO, you can attempt to demonstrate mastery on that LO again on a future quiz.  
+    * The final exam slot will be the final quiz, allowing you to redo past LOs but does not introduce new LOs, ensuring that you get a minimum of 2 tries to earn an S on every LO.  
 
-Take-Home Assessments
+Coding Challenges
 : 
-    * You may revise and resubmit take-home assessments after receiving feedback.  
-        * You may submit up to **2 revision assessments** in each weeklong revision period.
-        * Revision periods are shown in the revision form below.
+    * You may revise and resubmit coding challenges after receiving feedback.  
+        * You may submit at most **2 revisions** in each weeklong revision period (Sunday to Sunday).
+	* A revision costs you 1 token (more information below).
     * When revised work is graded, the new grade, if higher, replaces the old grade. Submitting revised work cannot lower your grade.  
-    * To be eligible for resubmission, you must have completed the assessment homework in good faith on your first attempt, earning at least an R. Redo opportunities _cannot_ be used as a way to skip take-home assessments and do them later.
-    * Resubmit an assessment by filling out the [**Take-Home Assessment Revision Request Form**](https://tinyurl.com/151-24au-revise) and resubmitting your work on gradescope. The form also clarifies some nuances of the revision policy.
+    * To be eligible for resubmission, you must have completed the coding challenge in good faith on your first attempt, earning at least an R. Revision opportunities _cannot_ be used as a way to skip coding challenges and doing them later.
+    * Resubmit a coding challenge in the revelant location on Gradescope. 
 
-Reading responses, labs, and reflections
+Reading responses, labs, and misc
 : 
 These are graded based on good faith engagement with the assigned questions and cannot be revised for credit.
-
-## Attendance
-
-We expect you to attend class every day because collaborative learning is such an integral part of the class. If you need to be absent, talk to your instructor as soon as you know. This means a week or more in advance for planned absences such as religious observances and sporting events.
-
-### Sick Policy
-
-Please stay home when you are sick. Wait to come back to class until you truly feel well enough to learn. Each day that you will miss class due to illness, contact your instructor before class (or as soon as possible).
-
-When coming back to class, wear a mask until there is no more than a usual concern of contagion. Protecting the people around you from your illness is a matter of professionalism and personal respect.
-
-### Late Work due to Illness and Time Away
-
-You are responsible for checking the course website to see what is assigned while you are out and for completing all assigned work.
-
-For any labs you missed, you must complete the lab on your own and submit it on gradescope by the lab deadline (see above section about deadlines). If you do not finish the lab after 90 minutes of focused work, you may make a comment saying that is how far you got in 90 minutes and submit what you have completed for credit.
-
-The late day and redo policies are designed to offer flexibility so that late work resulting from one or two minor to moderate illnesses or unforseen circumstances will not lower your grade in the class. If you find yourself needing to take lots of time away, please talk to your instructor (before the deadline of the work in question) about getting additional late days or increasing the number of late days you can spend on a given assignment.
 
 ## Access Needs
 

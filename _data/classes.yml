@@ -167,7 +167,10 @@
   summary: |
     We consider how to deal with compound data, such as the title, latitude, longitude, time, and date of an event.
   reading:
+    - page: /readings/heterogeneous-lists.html
+    - page: /readings/tables.html
   lab:
+    - page: /labs/tables.html
   
 
 - topic: Reading Lists and Tables from Files
@@ -175,7 +178,9 @@
   summary: |
     We consider a variety of techniques for gathering lists and tables of data from files.
   reading:
+    - page: /readings/data-from-files.html
   lab:
+    - page: /labs/data-from-files.html
 
 - topic: Thinking recursively
   abbrev: recursion-intro

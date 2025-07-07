@@ -5,9 +5,8 @@
 ;; Acknowledgements:
 ;;   ACKNOWLEDGEMENTS HERE
 
-(import image)
+
 (import lab)
-(import music)
 (import test)
 
 (title "Documentation and Testing")
