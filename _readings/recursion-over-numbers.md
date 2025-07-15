@@ -188,81 +188,9 @@ Indeed, the natural numbers form an ordering:
 \\]
 
 So we expect that if a data structure or algorithm can be expressed in some "ordered" fashion, we can use numeric recursion!
-For example, consider the recursively defined triangles that motivated our initial exploration into recursion:
 
-<pre class="scamper source">
-(import image)
+More examples will be explored on the lab.
 
-(overlay
-  (triangle 250 "outline" "blue")
-  (triangle 225 "outline" "blue")
-  (triangle 200 "outline" "blue")
-  (triangle 175 "outline" "blue")
-  (triangle 150 "outline" "blue")
-  (triangle 125 "outline" "blue")
-  (triangle 100 "outline" "blue")
-  (triangle 75 "outline" "blue")
-  (triangle 50 "outline" "blue")
-  (triangle 25 "outline" "blue"))
-</pre>
-
-This code is clearly redundant!
-How can we use numeric recursion to capture the recursive nature of this pattern?
-
-To do so, we can observe that there is are two potential "order" to the triangles: we can think about drawing them from top-to-bottom according to our `overlay` invocation or in the other order, from bottom-to-top.
-Let's generalize this computation to draw an arbitrary number of triangles, so let's draw them bottom-to-top, _i.e._, inside out, so that we can draw an unbounded number of triangles!
-
-Our recursive decomposition will decompose the task of drawing `n` such triangles:
-
-> To draw `n` triangles:
-> + When `n` is zero... (a)
-> + When `n` is non-zero... (b)
-
-{:type="a"}
-1.  When \\( n \\) is zero, we should draw no triangles!
-    But how can we create a drawing that contains no triangles?
-    One way out of this conundrum is to simply draw a triangle of size \\( 0 \\) which will not appear on the screen.
-2.  When \\( n \\) is non-zero, we need to draw \\( n \\) triangles by first recursively drawing \\( n-1 \\) triangles---that's our recursive assumption.
-    How do we then draw the \\( n \\)th additional triangle?
-    We need a formula for the size of the \\( n \\)th triangle in terms of \\( n \\)!
-    To derive this, let's put the sizes in a table according to their order according to the natural numbers.
-    Alternatively, we can think of the number as their _index_ in the ordering:
-
-    +   \\( n = 1 \\), \\( \text{size} = 25 \\).
-    +   \\( n = 2 \\), \\( \text{size} = 50 \\).
-    +   \\( n = 3 \\), \\( \text{size} = 75 \\).
-    +   \\( n = 4 \\), \\( \text{size} = 100 \\).
-    +   \\( n = 5 \\), \\( \text{size} = 125 \\).
-
-    By observing the pattern and using algebra, we can see that the size of triangle \\( n \\) is \\( n \times 25 \\).
-    We can then use `overlay` to combine the \\( n \\)th triangle with the remaining \\( n-1 \\) triangles.
-
-This gives us our final decomposition:
-
-> To draw `n` triangles:
-> + When `n` is zero, draw a triangle with size \\( 0 \\).
-> + When `n` is non-zero, overlay a triangle of size \\( n \times 25 \\) with a drawing of \\( n-1 \\) triangles.
-
-Again, we can translate this decomposition into code directly:
-
-<pre class="scamper source">
-(import image)
-
-(define nested-triangles
-  (lambda (n)
-    (match n
-      [0 (triangle 0 "outline" "blue")]
-      [_ (overlay (triangle (* n 25) "outline" "blue")
-                  (nested-triangles (- n 1)))])))
-
-(nested-triangles 10)
-
-(nested-triangles 5)
-
-(nested-triangles 0)
-
-(nested-triangles 25)
-</pre>
 
 # Self-checks
 
@@ -282,16 +210,3 @@ For example:
 1.  Follow the example of `factorial` and give a recursive decomposition for `terminal`.
 2.  Implement the `terminal` function based on this decomposition.
 
-## Problem: By Size (‡)
-
-We defined `(nested-triangle n)` to draw `n` triangles.
-Effectively, each triangle drawn by the function decreased in size by `25` which we derived in our recursive decomposition.
-Instead of drawing `n` triangles, we can instead take the _size_ of the largest triangle as input and decrease that size by `25` directly, instead of computing it as a formula of the number of triangles `n`.
-
-{:type="a"}
-1.  Give a recursive decomposition for an alternative implementation of `(nested-triangle size)` that takes the _size_ of the overall image as input.
-    The `size` here becomes the `size` of the outermost triangle, and each successive triangle decreases by `25` down to `0`.
-    For example `(nested-triangle 250)` should produce our original example of `10` triangles.
-2.  Implement this alternative decomposition of `(nested-triangle size)` and figure out which `size` parameters produce the examples generated in the reading.
-3.  Think about the pros and cons of this new implementation of `nested-triangle`.
-    Is there any upsides or downsides to having the parameter of the function be the size of the drawing versus the number of triangles?

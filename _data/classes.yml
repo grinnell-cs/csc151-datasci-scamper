@@ -207,7 +207,11 @@
   lab:
     - page: /labs/recursion-practice.html
 
-- topic: Breather Day / Do we understand recursion??
+- topic: Breather Day
+  summary: |
+      We pause to make sure we have a grasp on recursion.
+  reading:
+    - No reading today
 
 - topic: List motions
   summary: |
@@ -224,7 +228,7 @@
   summary: | 
     See above
   reading:
-    - page: /readings/recursion-over-numbers.html
+    - No reading today
   lab:
     - (continue Monday's lab)
 
@@ -237,12 +241,12 @@
     call themselves.  However, the parameter that we "simplify" at
     every step is a number, rather than a list.
   reading:
-    - (No required reading for today!)
+    - page: /readings/recursion-over-numbers.html
   lab:
     - page: /labs/numeric-recursion.html
 
 
-# currently where fall break hits
+
 
 - topic: Higher-order Recursive Programming
   abbrev: higher-order-recursive-programming
