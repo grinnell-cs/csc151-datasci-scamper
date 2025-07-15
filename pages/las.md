@@ -1,7 +1,6 @@
 ---
 title: Resources
 summary: One of the ways we assess your learning.
-permalink: /resources/
 ---
 
 ## Progress tracking worksheet
