@@ -265,20 +265,12 @@
   summary: |
     We combine higher-order functions and recursive programming to implement the "big three" operations over lists. (Extra topic: Tail recursion -- We look at an advanced version of recursion that is ubiquitous in functional programming, tail recursion.)
   reading:
-    - page: /readings/association-lists.html
+    - No reading today
   lab:
     - page: /labs/implementing-the-big-three.html
     - page: /labs/tail-recursion.html
 
 - topic: Breather / Catch-up day
-
-
-- topic: Data Visulization
-  abbrev: displaying-data
-  summary: |
-    We explore techniques for displaying simple kinds of data such as coordinate pairs or counts of categorical data.
-  reading:
-  lab:
 
 - topic: Dictionaries
   abbrev: dictionaries
@@ -287,9 +279,19 @@
     We consider how we might use list recursion to build structures that allow
     us to store information for quick retrieval.
   reading:
-    - (Review association lists reading)
+    - page: /readings/association-lists.html
   lab:
     - page: /labs/letter-inventory.html
+
+- topic: Data Visualization
+  abbrev: displaying-data
+  summary: |
+    We explore techniques for displaying simple kinds of data such as coordinate pairs or counts of categorical data.
+  reading:
+    - page: /readings/data-science.html
+    - page: /readings/displaying-data.html
+  lab:
+    - page: /labs/displaying-data.html
 
 - topic: Vectors
   abbrev: vectors
@@ -322,17 +324,22 @@
   lab:
     - page: /labs/random-language.html
 
+- topic: Structures
+  abbrev: structs
+  slides_link:
+  summary: |
+    We consider the `struct`, a way to define new types in Scheme.
+  reading:
+    - page: /readings/data-abstraction.html
+    - page: /readings/preconditions.html
+  lab:
+    - page: /labs/structs.html
+
 - topic: Files in Scheme
   abbrev: files
   summary: |
     We revisit files, considering the lower-level operations for working with files, a technique for structuring information that permits the information to persist across invocations of Scheme. Files also let our programs share information with other programs. 
 
-- topic: Association Lists
-  abbrev: association-lists
-  summary: |
-    We consider *association lists*, a simple, but useful, technique for organizing tables of information.
-  reading:
-  lab: 
 
 - topic: Project kick-off
   abbrev: project-kick-off
@@ -344,16 +351,12 @@
   lab: 
     - none
 
-- topic: Structures
-  abbrev: structs
+- topic: Regular Expressions?
+  abbrev: 
   slides_link:
   summary: |
-    We consider the `struct`, a way to define new types in Scheme.
   reading:
-    - page: /readings/data-abstraction.html
-    - page: /readings/preconditions.html
   lab:
-    - page: /labs/structs.html
 
 - topic: Trees
   abbrev: trees

@@ -19,11 +19,8 @@ todo:
 
 
 1. Introduce yourself to your partner, discuss strengths and weaknesses, decide how you wll approach the lab.
-
 2. Download the lab.
-
 * [random-language.scm](../code/labs/random-language.scm)
-
 3. Review the procedures included in the lab to make sure you understand what they are intended to do.
 
 ## Acknowledgements

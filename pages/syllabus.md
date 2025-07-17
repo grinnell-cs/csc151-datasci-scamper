@@ -104,31 +104,24 @@ Welcome to CSC 151! In this class, you will learn computer programming using the
 
 ## Learning Objectives
 
-This course covers 18 learning objectives (LOs). 
+This course covers 16 learning objectives (LOs). 
 
-* Unit 1 (Weeks 1–4)   
-    - **Decomposition**. Decompose a computational problem into smaller sub-problems amendable to implementation with functions.   
-    - **Procedural abstraction**. Take a concrete implementation in Racket and create a procedure that generalizes that behavior.   
-    - **Tracing.** Trace the execution of a Racket program using a substitutive model of computation.   
-    - **Primitive types**. Express basic computations over primitive values and their associated standard library functions.   
-    - **Conditionals**. Use Boolean expressions and conditional operations to produce conditional behavior.   
-    - **Testing**. Test programs according to good software engineering principles.   
-    - **Documentation**. Document programs according to good software engineering principles.   
-
-* Unit 2 (Weeks 5–8)   
-    - **Local bindings**. Refactor redundancy and add clarity in computations with let-bindings.   
-    - **Lists**. Manipulate lists with fundamental higher-order list functions.   
-    - **List recursion**. Design and write recursive functions over lists.   
-    - **Numeric recursion**. Design and write recursive functions over the natural numbers.   
-    - **Higher-order programming**. Write procedures that take procedures as parameters and return procedures as results.   
-
-* Unit 3 (Weeks 9–13)   
-    - **Lambda-free anonymous procedures**. Use section and composition to simplify computations.   
-    - **Dictionaries**. Design and write functions that use dictionaries.   
-    - **Vectors**. Design and write functions (potentially recursive functions) that use vectors.   
-    - **Data abstraction**. Design data structures to separate interface from implementation.   
-    - **Tree recursion**. Design and write recursive functions over trees.   
-    - **Running time**. Use a mental model of computation to count the relevant number of operations performed by a function. 
+1. **Primitive types**. Express basic computations over primitive values and their associated standard library functions.
+2. **Procedural abstraction**. Take a concrete implementation in Racket and create a procedure that generalizes that behavior.
+3. **Tracing.** Trace the execution of a Racket program using a substitutive model of computation.
+4. **Conditionals**. Use Boolean expressions and conditional operations to produce conditional behavior.
+5. **Lists**. Manipulate lists with fundamental higher-order list functions.
+6. **Decomposition**. Decompose a computational problem into smaller sub-problems amendable to implementation with functions.   
+7. **Testing**. Test programs according to good software engineering principles.   
+8. **Documentation**. Document programs according to good software engineering principles.   
+9. **Local bindings**. Refactor redundancy and add clarity in computations with let-bindings.   
+10. **List recursion**. Design and write recursive functions over lists.   
+11. **Numeric recursion**. Design and write recursive functions over the natural numbers.   
+12. **Higher-order programming**. Write procedures that take procedures as parameters and return procedures as results.   
+13. **Lambda-free anonymous procedures**. Use section and composition to simplify computations.   
+14. **Dictionaries**. Design and write functions that use dictionaries.   
+15. **Vectors**. Design and write functions (potentially recursive functions) that use vectors.   
+16. **Data abstraction**. Design data structures to separate interface from implementation.   
 
 ## Communication
 
@@ -139,7 +132,7 @@ Email
 : Your instructor will send course announcements via email. You are responsible for reading all email from your instructor.
 
 Microsoft Teams
-: Our class has a Teams channel for Q\&A shared by all four sections. If you have a question and others in the class could benefit from its answer, please post in the teams Q\&A channel.
+: Our class has a Teams channel for Q&A shared by all four sections. If you have a question and others in the class could benefit from its answer, please post in the relevant teams channel.
 
 Getting in touch with your instructor
 : If you need to get in touch with me privately, use email or teams. We try to reply to messages within about 24 hours, excluding weekends and holidays. If you do not hear back within that amount of time, please send a reminder.
@@ -276,18 +269,18 @@ This class uses different ideas of "ungrading" and "specifications based grading
 
 You may earn a **C** in this class by earning the following grades:
 - At most 2 **R**'s and the remaining **M**'s  on coding challenges and the final project.
-- An **S** on at least 12 of the 18 quiz problems (Learning Objectives).
+- An **S** on at least 11 of the 16 quiz problems (Learning Objectives).
 - A maximum of 12 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**. 
 
 To earn a **B** in this class you must receive the following grades:
 - An **M** or better on all Coding Challenges and the final project.
-- An **S** on at least 15 of the 18 quiz problems (Learning Objectives).
+- An **S** on at least 13 of the 16 quiz problems (Learning Objectives).
 - A maximum of 6 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**.
 
 To earn an **A** in this class, you must do all of the requirements for a **B**, plus earn:
 - An **E** on the final project
 - An **E** on at least 6 of the 8 coding challenges
-- An **S** on all 18 of the 18 quiz problems (Learning Objectives). 
+- An **S** on all 16 of the 16 quiz problems (Learning Objectives). 
 
 Other grades are possible as well (A-, B+, B-, C+, D, F). You may earn an **A-** or **B+** by meeting all of the requirements of the **B** grade, and one (**B+**) or two (**A-**) requirements from the **A** grade. You may earn a **B-** or **C+** by meeting all of the requirements of the **C** grade and one (**C+**) or two (**B-**) of the requirements of the **B** grade. Earn a **D** if two of the requirements of a **C** are met. Earn an **F** if zero or one of the requirements of a **C** are met.
 
