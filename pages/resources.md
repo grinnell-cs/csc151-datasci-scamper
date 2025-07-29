@@ -7,7 +7,7 @@ permalink: /resources/
 
 ### Course Policies
 
-[Information about Tokens](../handouts/tokens)
+[Information about Tokens](https://eikmeier.sites.grinnell.edu/csc-151-fall-2025/handouts/tokens.html)
 
 Use the following spreadsheet to track your progress in our course: [Progress Tracker](https://grinco-my.sharepoint.com/:x:/g/personal/eikmeier_grinnell_edu/EXvpJc-zoHhGuwNAZzT42MoBG4XT9XFtIDH9BoDRo1dHZg?e=2urXaQ)
 

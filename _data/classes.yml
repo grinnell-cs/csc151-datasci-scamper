@@ -149,6 +149,8 @@
       resource: /files/DiverseTeams2016.pdf
     - title: How Pair Programming Really Works (Wray)
       resource: /files/PairProgramming.pdf
+    - title: Coping with Hitchhikers and Couch Potatoes on Teams
+      resource: /files/OakleyHitchhikers2004.pdf
   lab:
     - (TBA)
 
