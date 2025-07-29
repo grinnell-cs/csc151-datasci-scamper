@@ -8,9 +8,13 @@ permalink: /syllabus/
 ## About
 
 <dl class="dl-horizontal">
-  <dt>Instructor</dt>
+  <dt>Instructors</dt>
   <dd>
-    <p><a href="{{ site.instructor_homepage }}">{{ site.instructor }}</a></p>
+  <ul class="list-unstyled">
+    {% for item in site.instructor %}
+      <li>{{ item | markdownify | remove: "<p>" | remove: "</p>"  }}</li>
+    {% endfor %}
+    </ul>
   </dd>
 
   <dt>Class Meeting Times</dt>
@@ -132,10 +136,10 @@ Email
 : Your instructor will send course announcements via email. You are responsible for reading all email from your instructor.
 
 Microsoft Teams
-: Our class has a Teams channel for Q&A shared by all four sections. If you have a question and others in the class could benefit from its answer, please post in the relevant teams channel.
+: Our class has a Teams site for Q&A shared by all four sections. If you have a question and others in the class could benefit from its answer, please post in the relevant teams channel.
 
 Getting in touch with your instructor
-: If you need to get in touch with me privately, use email or teams. We try to reply to messages within about 24 hours, excluding weekends and holidays. If you do not hear back within that amount of time, please send a reminder.
+: If you need to get in touch with your instructor privately, use email or teams. We try to reply to messages within about 24 hours, excluding weekends and holidays. If you do not hear back within that amount of time, please send a reminder.
 
 Gradescope
 : You will submit assignments via gradescope. Please confirm that you have been added to this class on gradescope.
@@ -178,7 +182,7 @@ Final project
 : The final programming assignment will be more open ended and completed in teams.
 
 Quizzes
-: About once per week, you will complete an individual, 15-minute quiz in class on paper.
+: About once per week, you will complete an individual quiz in class on paper.
 
 Misc activities
 : Miscellanious activities, usually aimed at meta-cognitive learning. For example you may be asked to reflect on how a particular assessment went, to help you understand what went well and what went poorly. 
@@ -214,7 +218,7 @@ Coding Challenges
 - The following are allowed, but not recommended in order to get as much learning as possible from the course:
   - You may discuss the assessment with peers, inside or outside the class. However, every student should write their own solution in code.
   - You are allowed to use other resources (maybe most top of your mind: the internet and all its resources).
-  - ANY resource used under this category ("not recommended") **MUST** be appropriately cited. This includes: Any person, any website, any text, etc. If you used Generative AI to write code and/or text you must include in your citation the exact prompt you used and the exact results given by the GenAI. 
+  - ANY resource used under this category ("not recommended") **MUST** be appropriately cited. This includes: Any person, any website, any text, etc. If you used Generative AI to write code and/or text you must include in your citation the name of the model you used, the exact prompt you used, and the exact results given by the GenAI. 
 
  
 Quizzes 
@@ -227,7 +231,7 @@ Final project
 - Completed in groups of 3–4
 - All members should contribute equally to the project
 - You may get help from course staff and peers outside your team
-- You are allowed to use other resources, see the policy under Coding Challenges. 
+- You are allowed to use other resources, with the same policy as Coding Challenges. 
 
 ## Grading
 
@@ -253,6 +257,7 @@ Coding Challenges and the Final Project
   * **R** = Needs revision  
   * **N** = Not complete (did not make a good faith effort)  
 - Criteria for each letter grade are given on the instructions for each assessment.
+- Each Coding Challenge is worth 1 assignment point in the table below, and the final project is worth 2 assignment points. 
 
 Learning Objectives (Quizzes)
 : 
@@ -265,22 +270,19 @@ Learning Objectives (Quizzes)
 
 ### Final grade
 
-This class uses different ideas of "ungrading" and "specifications based grading". It is our hope that these methods of evaluation will remove stress and focus all of our attention on learning as much as possible. 
+This class uses different ideas of "ungrading" and "specifications based grading". It is our hope that these methods of evaluation will remove stress and focus all of our attention on learning as much as possible.
 
-You may earn a **C** in this class by earning the following grades:
-- At most 2 **R**'s and the remaining **M**'s  on coding challenges and the final project.
-- An **S** on at least 11 of the 16 quiz problems (Learning Objectives).
-- A maximum of 12 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**. 
+|   	| &nbsp;   &nbsp; Coding Challenges and Final Project &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;	| Quizzes (LOs) &nbsp; &nbsp;	| &nbsp;   &nbsp; &nbsp;   &nbsp; Labs, Readings, and Misc. 	|
+|---	|:-------------------:	|:---------------:	|:---------------------------:	|
+| **C** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	| at most 2 *R*'s, the remaining *M* or higher      	| at least 11 *S*           	| at most 12 *NS*                  	|
+| **B** 	| 10 *M*'s or higher            	| at least 13 *S*           	| at most 6 *NS*                   	|
+| **A** 	| at most 2 *M*'s, the remaining 8 *E*       	| 16 *S*           	| at most 4 *NS*                   	|
 
-To earn a **B** in this class you must receive the following grades:
-- An **M** or better on all Coding Challenges and the final project.
-- An **S** on at least 13 of the 16 quiz problems (Learning Objectives).
-- A maximum of 6 grades of **NS** on all readings, labs, and misc. assignments. The remaining must receive an **S**.
+<br>
 
-To earn an **A** in this class, you must do all of the requirements for a **B**, plus earn:
-- An **E** on the final project
-- An **E** on at least 6 of the 8 coding challenges
-- An **S** on all 16 of the 16 quiz problems (Learning Objectives). 
+
+Let's walk through the table on how to get an A in the course. Over the course of all of the coding challenges and final project, you must earn at least 8 grades of *E* - coding challenges each count for 1, and the final project counts for 2. The remaining two grades must be at least an *M*. Next, you must receive an *S* on all 16 of the quiz problems (learning outcomes). Finally, you may have at most 4 grades of *NS* accross all reading problems, labs, or other miscellaneous assignments. 
+
 
 Other grades are possible as well (A-, B+, B-, C+, D, F). You may earn an **A-** or **B+** by meeting all of the requirements of the **B** grade, and one (**B+**) or two (**A-**) requirements from the **A** grade. You may earn a **B-** or **C+** by meeting all of the requirements of the **C** grade and one (**C+**) or two (**B-**) of the requirements of the **B** grade. Earn a **D** if two of the requirements of a **C** are met. Earn an **F** if zero or one of the requirements of a **C** are met.
 
@@ -301,7 +303,7 @@ If you miss a significant number of class days (including via excused absences) 
 
 *Unexcused absences*: An excessive number of unexcused absences (including being marked as late or not participating) will impact your grade in the following manner. If you are unexcused for more than 3 days, you may not receive a grade higher than a B+ in our class. Similarly, if you are unexcused for more than 6 days you may not receive higher than a C+ in our class. Finally, if you are unexcused for more than 9 days, you may not receive a grade higher than a D.
 
-Excused absences: You may be excused for a class under certain situations. If you plan to observe holy days that coincide with class meetings or assignment due dates to consult with your instructor in the first three weeks of classes so that we may reach a mutual understanding of how you can meet the terms of your religious observance and also the requirements for this course. Likewise, please discuss with me in the first three weeks of the semester if you will be absent due to athletic events.
+*Excused absences*: You may be excused for a class under certain situations. If you plan to observe holy days that coincide with class meetings or assignment due dates to consult with your instructor in the first three weeks of classes so that we may reach a mutual understanding of how you can meet the terms of your religious observance and also the requirements for this course. Likewise, please discuss with me in the first three weeks of the semester if you will be absent due to athletic events.
 
 You may also be excused from class in the even of an emergency or illness. I will not require proof or details, just please inform me as soon as you are able. If you attend class with respiratory symptoms, please consider wearing an N-95 mask to protect others.
 
@@ -324,10 +326,10 @@ Misc
 
 **Late Policy**
 
-* You may turn in any lab or coding challenge up to 48 hours late, with no penalty. You do not need prior approval to take advantage of this grace period. Your instructor does appreciate knowing if you plan to turn in things late.
-* If you believe you will need an extension of more than 48 hours, please talk with me as soon as possible. Assignments turned in more than two days late, without prior approval (before the original due date) of the instructor will not be accepted.
+* You may turn in any lab or coding challenge up to 48 hours late, with the use of a token (all about tokens [here](../handouts/tokens)). There will be no penalty to your grade if you use a token. You do not need prior approval to take advantage of this grace period. Your instructor does appreciate knowing if you plan to turn in things late.
+* If you believe you will need an extension of more than 48 hours, please talk with your instructor as soon as possible. Assignments turned in more than two days late, without prior approval (before the original due date) of the instructor will not be accepted.
 * Our course will move quickly, therefore it is in your best interest to always follow the posted deadlines. 
-* Please keep in mind that if you turn in work late, even using the grace period, we may not be able to grade it as quickly as you or I hope.
+* Please keep in mind that if you turn in work late, even using the grace period, we may not be able to grade it as quickly as you (or your instructors) hope.
 
 
 ### Redo and Revision Opportunities
@@ -345,7 +347,7 @@ Coding Challenges
 : 
     * You may revise and resubmit coding challenges after receiving feedback.  
         * You may submit at most **2 revisions** in each weeklong revision period (Sunday to Sunday).
-	* A revision costs you 1 token (more information below).
+	* A revision costs you 1 token (more information [here](../handouts/tokens)).
     * When revised work is graded, the new grade, if higher, replaces the old grade. Submitting revised work cannot lower your grade.  
     * To be eligible for resubmission, you must have completed the coding challenge in good faith on your first attempt, earning at least an R. Revision opportunities _cannot_ be used as a way to skip coding challenges and doing them later.
     * Resubmit a coding challenge in the revelant location on Gradescope. 
