@@ -30,13 +30,13 @@ term: false
 # Set the theme color. Options are blue, green, red, orange, purple, and gray
 color: blue
 
-instructor: Nicole Eikmeier
-instructor_title: Professor Eikmeier
-instructor_homepage: https://eikmeier.sites.grinnell.edu
-instructor_email: eikmeier@grinnell.edu
+instructor:
+  - Sections 01 and 02 [William Rebelsky](https://rebelskyw.cs.grinnell.edu)
+  - Sections 03 and 04 [Nicole Eikmeier](https://eikmeier.sites.grinnell.edu)
 
 office_hours:
-  - "Noyce 3809, times TBD: [https://calendly.com/eikmeier](https://calendly.com/leahperl)"
+  - "Professor Eikmeier: Noyce 3809, times TBD: [https://calendly.com/eikmeier](https://calendly.com/eikmeier)"
+  - "Professor Rebelsky: Noyce 3823, times TBD"
 
 meeting_times: |
   All sections meet Mondays, Wednesdays, and Fridays
