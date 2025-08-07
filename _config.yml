@@ -113,9 +113,9 @@ collections:
     output: true
     permalink: /links:path.html
 
-  mps:
+  ccs:
     output: true
-    permalink: /mps/:path.html
+    permalink: /ccs/:path.html
 
   readings:
     output: true
@@ -134,7 +134,7 @@ defaults:
   
   - scope:
       path: ""
-      type: mps
+      type: ccs
     values:
       link: false
       layout: assigned
