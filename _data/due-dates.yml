@@ -9,7 +9,7 @@
 
 - date:	2025-09-05
   assigned:
-    - Coding Challenge 1
+    - page: /ccs/cc01.html
 
 - date: 2025-09-10
   due:
@@ -17,11 +17,11 @@
 
 - date: 2025-09-11
   due:
-    - Coding Challenge 1
+    - page: /ccs/cc01.html
 
 - date: 2025-09-12
   assigned:
-    - Coding Challenge 2
+    - page: /ccs/cc02.html
 
 - date: 2025-09-17
   due:
@@ -29,11 +29,11 @@
 
 - date: 2025-09-18
   due:
-    - Coding Challenge 2
+    - page: /ccs/cc02.html
 
 - date: 2025-09-19
   assigned:
-    - Coding Challenge 3
+    - page: /ccs/cc03.html
 
 - date: 2025-09-24
   due:
@@ -41,7 +41,7 @@
 
 - date: 2025-09-25
   due:
-    - Coding Challenge 3
+    - page: /ccs/cc03.html
 
 - date: 2025-09-26
   assigned:
