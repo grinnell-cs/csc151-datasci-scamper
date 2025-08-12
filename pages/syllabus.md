@@ -326,7 +326,7 @@ Misc
 
 **Late Policy**
 
-* You may turn in any lab or coding challenge up to 48 hours late, with the use of a token (all about tokens [here](../handouts/tokens)). There will be no penalty to your grade if you use a token. You do not need prior approval to take advantage of this grace period. Your instructor does appreciate knowing if you plan to turn in things late.
+* You may turn in any lab or coding challenge up to 48 hours late, with the use of a token (all about tokens [here](../handouts/tokens.html)). There will be no penalty to your grade if you use a token. You do not need prior approval to take advantage of this grace period. Your instructor does appreciate knowing if you plan to turn in things late.
 * If you believe you will need an extension of more than 48 hours, please talk with your instructor as soon as possible. Assignments turned in more than two days late, without prior approval (before the original due date) of the instructor will not be accepted.
 * Our course will move quickly, therefore it is in your best interest to always follow the posted deadlines. 
 * Please keep in mind that if you turn in work late, even using the grace period, we may not be able to grade it as quickly as you (or your instructors) hope.
