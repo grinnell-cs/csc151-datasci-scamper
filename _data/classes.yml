@@ -340,7 +340,9 @@
 - topic: Files in Scheme
   abbrev: files
   summary: |
-    We revisit files, considering the lower-level operations for working with files, a technique for structuring information that permits the information to persist across invocations of Scheme. Files also let our programs share information with other programs. 
+    We revisit files, considering the lower-level operations for working with files, a technique for structuring information that permits the information to persist across invocations of Scheme. Files also let our programs share information with other programs.
+  reading:
+    - page: /readings/files.html
 
 
 - topic: Project kick-off
