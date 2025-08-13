@@ -1,6 +1,7 @@
 ---
 title: Recursion Over Lists
 ---
+# A first example
 
 As a first example of recursion, we designed a function that computes the sum of the elements of an input list.
 
