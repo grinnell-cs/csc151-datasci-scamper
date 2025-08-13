@@ -105,6 +105,15 @@ permalink: /syllabus/
 
 Welcome to CSC 151! In this class, you will learn computer programming using the Scamper programming language. You do not need any prior knowledge of computer science or programming. All sections this semester will focus on data science.
 
+Jump to ...
+
+| [Learning Objectives](#learning-objectives) &nbsp; &nbsp; | [Communication](#communication)&nbsp; &nbsp; | [Help Resources](#class-meetings-and-help-resources) &nbsp; &nbsp; | [Deliverables](#deliverables) &nbsp; &nbsp; |
+| [Collaboration and Resources](#collaboration-and-resources) &nbsp; &nbsp; | [Grading](#grading) &nbsp; &nbsp; | [Final Grade](#final-grade) | [Deadlines and Late Policy](#deadlines-and-late-policy) &nbsp; &nbsp; |
+| [Redo and Revision Opportunities](#redo-and-revision-opportunities) &nbsp; &nbsp; | [Access Needs](#access-needs) &nbsp; &nbsp; | [Title IX](#title-ix-and-pregnancy-related-conditions) &nbsp; &nbsp; | [Take Care of Yourself](#take-care-of-yourself) &nbsp; &nbsp; | [Inclusion Statement](#inclusion-statement) |
+
+
+
+
 
 ## Learning Objectives
 
@@ -164,7 +173,7 @@ Office hours
 Individual tutors
 : If you are taking advantage of the resources above and need more help, contact your instructor to request an individual tutor to meet with you one-on-one.
 
-[**Academic advising**](https://www.grinnell.edu/about/leadership/offices-services/academic-advising)
+[**Academic success center**](https://www.grinnell.edu/about/leadership/offices-services/academic-success-center)
 : Grinnell offers academic coaches available to you as a resource to help you develop learning strategies and support you in your learning.
 
 ## Deliverables
@@ -356,10 +365,32 @@ Reading responses, labs, and misc
 : 
 These are graded based on good faith engagement with the assigned questions and cannot be revised for credit.
 
-## Access Needs
+### Access Needs
 
 To ensure that your access needs are met, I encourage individual students to approach me so we can have a discussion about your distinctive learning needs and how to meet them within the context of this course. In addition, Grinnell College makes formal accommodations for students with documented disabilities. Students with disabilities partner with the [Office of Disability Resources](https://www.grinnell.edu/about/leadership/offices-services/accessibility-disability/students) to make academic accommodation letters available to faculty via the accommodation portal. You can reach Disability Resources staff via email at access@grinnell.edu, by phone 641-269-3089, or by stopping by their offices on the first floor of Steiner Hall.
 
-## Title IX and Pregnancy Related Conditions
+### Title IX and Pregnancy Related Conditions
 
 Grinnell College is committed to compliance with Title IX and to supporting the academic success of pregnant and parenting students and students with pregnancy related conditions. If you are a pregnant student, have pregnancy related conditions, or are a parenting student (child under one-year needs documented medical care) who wishes to request reasonable related supportive measures from the College under Title IX, please email the Title IX Coordinator at titleix@grinnell.edu. The Title IX Coordinator will work with Disability Resources and your professors to provide reasonable supportive measures in support of your education while pregnant or as a parent under Title IX.
+
+### Take Care of Yourself
+
+Do your best to maintain a healthy lifestyle this term by eating well, exercising, avoiding drugs and alcohol, getting enough sleep and taking some time to relax. This will help you achieve your goals and cope with stress.
+
+All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available through campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful.
+
+If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, I strongly encourage you to seek support. Student Health and Wellness (SHAW) is here to help: call 641-269-3230 and visit their website at [grinnell.edu/about/offices-services/student-health](https://www.grinnell.edu/about/offices-services/student-health). Consider reaching out to a friend, faculty, or family member you trust for help getting connected to the support that can help.
+
+
+If you or someone you know is feeling suicidal or in danger of self-harm, call someone immediately, day or night:
+* Need to Talk Line: 641-269-4404 (available 24/7 for counseling needs)
+* Call or text 988 24/7 to talk about any concerns [988lifeline.org](https://988lifeline.org/). Options available in Spanish and ASL.
+* If the situation is life threatening, call 911
+
+(adapted from [www.cmu.edu/teaching/designteach/design/](https://www.cmu.edu/teaching/designteach/design/syllabus/syllabussupport.html))
+
+### Inclusion Statement
+
+It is my intention that students from all backgrounds and perspectives will be well served by this course, and that the diversity that students bring to this class will be viewed as an asset. I welcome individuals of all ages, backgrounds, beliefs, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, socioeconomic background, family education level, ability – and other visible and nonvisible differences. All members of this class are expected to contribute to a respectful, welcoming, and inclusive environment for every other member of the class. Your suggestions are encouraged and appreciated.
+
+(adapted from [lgbtq.asee.org/resources/ally-resources/](https://lgbtq.asee.org/resources/ally-resources/))
